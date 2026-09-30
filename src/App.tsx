@@ -3,6 +3,7 @@ import { Navbar } from './components/layout/Navbar';
 import { Footer } from './components/layout/Footer';
 import { StudioView } from './components/studio/StudioView';
 import { TemplatesGallery } from './components/templates/TemplatesGallery';
+import { HowItWorksView } from './components/how-it-works/HowItWorksView';
 
 export default function App() {
   const { activeView, toastMessage } = useUIStore();
@@ -24,11 +25,7 @@ export default function App() {
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {activeView === 'studio' && <StudioView />}
         {activeView === 'templates' && <TemplatesGallery />}
-        {activeView === 'how-it-works' && (
-          <div className="text-center py-12">
-            <h2 className="text-2xl font-bold">How It Works View Initialized</h2>
-          </div>
-        )}
+        {activeView === 'how-it-works' && <HowItWorksView />}
       </main>
 
       <Footer />
