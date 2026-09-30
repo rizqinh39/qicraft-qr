@@ -2,6 +2,7 @@ import React from 'react';
 import { PayloadSection } from './PayloadSection';
 import { CustomizationAccordionGroup } from './CustomizationAccordionGroup';
 import { StickyPreviewPanel } from '../preview/StickyPreviewPanel';
+import { MobilePreviewDrawer } from '../preview/MobilePreviewDrawer';
 
 export const StudioView: React.FC = () => {
   return (
@@ -12,10 +13,13 @@ export const StudioView: React.FC = () => {
         <CustomizationAccordionGroup />
       </div>
 
-      {/* Right Column: Sticky Preview Canvas & Exporters (5 cols) */}
-      <div className="lg:col-span-5">
+      {/* Right Column: Sticky Preview Canvas & Exporters (5 cols, Desktop) */}
+      <div className="hidden lg:block lg:col-span-5">
         <StickyPreviewPanel />
       </div>
+
+      {/* Floating Bottom Drawer on Mobile */}
+      <MobilePreviewDrawer />
     </div>
   );
 };

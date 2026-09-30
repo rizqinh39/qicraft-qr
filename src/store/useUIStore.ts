@@ -16,17 +16,25 @@ interface UIState {
 }
 
 const getInitialLocale = (): Locale => {
-  if (typeof window !== 'undefined') {
-    const saved = localStorage.getItem('qicraft_locale') as Locale;
-    if (saved === 'en' || saved === 'id') return saved;
+  try {
+    if (typeof window !== 'undefined' && typeof localStorage !== 'undefined' && localStorage) {
+      const saved = localStorage.getItem('qicraft_locale') as Locale;
+      if (saved === 'en' || saved === 'id') return saved;
+    }
+  } catch {
+    // Ignore storage errors in non-browser envs
   }
   return 'id'; // Default to Indonesian
 };
 
 const getInitialTheme = (): 'dark' | 'light' => {
-  if (typeof window !== 'undefined') {
-    const saved = localStorage.getItem('qicraft_theme') as 'dark' | 'light';
-    if (saved === 'dark' || saved === 'light') return saved;
+  try {
+    if (typeof window !== 'undefined' && typeof localStorage !== 'undefined' && localStorage) {
+      const saved = localStorage.getItem('qicraft_theme') as 'dark' | 'light';
+      if (saved === 'dark' || saved === 'light') return saved;
+    }
+  } catch {
+    // Ignore storage errors
   }
   return 'dark';
 };
@@ -38,16 +46,26 @@ export const useUIStore = create<UIState>((set) => ({
   toastMessage: null,
 
   setLocale: (locale) => {
-    localStorage.setItem('qicraft_locale', locale);
+    try {
+      if (typeof localStorage !== 'undefined' && localStorage) {
+        localStorage.setItem('qicraft_locale', locale);
+      }
+    } catch {}
     set({ locale });
   },
 
   setTheme: (theme) => {
-    localStorage.setItem('qicraft_theme', theme);
-    if (theme === 'dark') {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
+    try {
+      if (typeof localStorage !== 'undefined' && localStorage) {
+        localStorage.setItem('qicraft_theme', theme);
+      }
+    } catch {}
+    if (typeof document !== 'undefined') {
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
     }
     set({ theme });
   },
