@@ -1,4 +1,5 @@
 import { IDpiPreset, IPrintDimension, DpiPresetKey } from './types';
+export * from './types';
 
 /**
  * Standard preset dimension configurations for layman and professional usage
