@@ -9,3 +9,4 @@ dist
 *.key
 *.cert
 *.tsbuildinfo
+.vite
