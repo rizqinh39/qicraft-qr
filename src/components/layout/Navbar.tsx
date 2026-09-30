@@ -7,16 +7,17 @@ import { LanguageToggle } from './LanguageToggle';
 import { ThemeToggle } from './ThemeToggle';
 import { Badge } from '../ui/Badge';
 import { Button } from '../ui/Button';
-import { ShieldCheck, RotateCcw, Sparkles, LayoutTemplate, HelpCircle } from 'lucide-react';
+import { ShieldCheck, RotateCcw, Sparkles, LayoutTemplate, HelpCircle, Info } from 'lucide-react';
 
 export const Navbar: React.FC = () => {
   const { locale, activeView, setActiveView } = useUIStore();
   const resetDefaults = useQRStore((s) => s.resetDefaults);
 
-  const navItems: Array<{ id: AppView; labelKey: 'nav.generator' | 'nav.templates' | 'nav.howItWorks'; icon: React.ReactNode }> = [
+  const navItems: Array<{ id: AppView; labelKey: 'nav.generator' | 'nav.templates' | 'nav.howItWorks' | 'nav.about'; icon: React.ReactNode }> = [
     { id: 'studio', labelKey: 'nav.generator', icon: <Sparkles className="w-4 h-4" /> },
     { id: 'templates', labelKey: 'nav.templates', icon: <LayoutTemplate className="w-4 h-4" /> },
     { id: 'how-it-works', labelKey: 'nav.howItWorks', icon: <HelpCircle className="w-4 h-4" /> },
+    { id: 'about', labelKey: 'nav.about', icon: <Info className="w-4 h-4" /> },
   ];
 
   return (

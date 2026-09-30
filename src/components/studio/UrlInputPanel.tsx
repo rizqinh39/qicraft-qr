@@ -45,7 +45,7 @@ export const UrlInputPanel: React.FC = () => {
         {showUtm && (
           <div className="p-3.5 pt-1 space-y-3 border-t border-border-subtle/60 bg-surface-card/40">
             <div>
-              <label className="block text-[11px] font-medium text-slate-400 mb-1">
+              <label className="block text-xs font-medium text-slate-300 mb-1">
                 {t('field.utm.source', locale)}
               </label>
               <input
@@ -53,13 +53,13 @@ export const UrlInputPanel: React.FC = () => {
                 value={urlPayload.utmSource || ''}
                 onChange={(e) => setUrlPayload({ utmSource: e.target.value })}
                 placeholder="newsletter, google, flyer"
-                className="w-full px-3 py-1.5 rounded bg-bg-base border border-border-subtle text-xs text-slate-200 placeholder:text-slate-600 focus:outline-none focus:border-primary"
+                className="w-full px-3 py-2 rounded bg-bg-base border border-border-subtle text-xs sm:text-sm text-slate-100 placeholder:text-slate-500 focus:outline-none focus:border-primary"
               />
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div>
-                <label className="block text-[11px] font-medium text-slate-400 mb-1">
+                <label className="block text-xs font-medium text-slate-300 mb-1">
                   {t('field.utm.medium', locale)}
                 </label>
                 <input
@@ -67,12 +67,12 @@ export const UrlInputPanel: React.FC = () => {
                   value={urlPayload.utmMedium || ''}
                   onChange={(e) => setUrlPayload({ utmMedium: e.target.value })}
                   placeholder="qr_print, banner, social"
-                  className="w-full px-3 py-1.5 rounded bg-bg-base border border-border-subtle text-xs text-slate-200 placeholder:text-slate-600 focus:outline-none focus:border-primary"
+                  className="w-full px-3 py-2 rounded bg-bg-base border border-border-subtle text-xs sm:text-sm text-slate-100 placeholder:text-slate-500 focus:outline-none focus:border-primary"
                 />
               </div>
 
               <div>
-                <label className="block text-[11px] font-medium text-slate-400 mb-1">
+                <label className="block text-xs font-medium text-slate-300 mb-1">
                   {t('field.utm.campaign', locale)}
                 </label>
                 <input
@@ -80,7 +80,7 @@ export const UrlInputPanel: React.FC = () => {
                   value={urlPayload.utmCampaign || ''}
                   onChange={(e) => setUrlPayload({ utmCampaign: e.target.value })}
                   placeholder="spring_sale, launch2026"
-                  className="w-full px-3 py-1.5 rounded bg-bg-base border border-border-subtle text-xs text-slate-200 placeholder:text-slate-600 focus:outline-none focus:border-primary"
+                  className="w-full px-3 py-2 rounded bg-bg-base border border-border-subtle text-xs sm:text-sm text-slate-100 placeholder:text-slate-500 focus:outline-none focus:border-primary"
                 />
               </div>
             </div>

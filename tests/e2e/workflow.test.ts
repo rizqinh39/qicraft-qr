@@ -4,6 +4,7 @@ import { useUIStore } from '../../src/store/useUIStore';
 import { TEMPLATES_DATA } from '../../src/data/templates';
 import { calculatePrintDimensions } from '../../src/core/dpi/printCalculator';
 import { resolveErrorCorrectionLevel } from '../../src/core/qr/safetyGuard';
+import { t } from '../../src/i18n';
 
 describe('QiCraft End-to-End Workflow & Store Integration', () => {
   beforeEach(() => {
@@ -79,5 +80,16 @@ describe('QiCraft End-to-End Workflow & Store Integration', () => {
 
     // Must be elevated to at least Q
     expect(effective).toBe('Q');
+  });
+
+  it('supports switching to the About view and resolving about translations', () => {
+    useUIStore.getState().setActiveView('about');
+    expect(useUIStore.getState().activeView).toBe('about');
+
+    // Test translation in Indonesian and English
+    expect(t('nav.about', 'id')).toBe('Tentang');
+    expect(t('nav.about', 'en')).toBe('About');
+    expect(t('about.title', 'id')).toContain('QiCraft');
+    expect(t('about.title', 'en')).toContain('QiCraft');
   });
 });

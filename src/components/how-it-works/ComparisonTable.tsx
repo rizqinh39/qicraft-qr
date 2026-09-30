@@ -49,36 +49,36 @@ export const ComparisonTable: React.FC = () => {
       <div className="overflow-x-auto">
         <table className="w-full text-left border-collapse">
           <thead>
-            <tr className="border-b border-border-subtle bg-bg-base/60">
-              <th className="py-4 px-5 text-xs font-semibold text-slate-400 uppercase tracking-wider">
+            <tr className="border-b border-border-subtle bg-bg-base/70">
+              <th className="py-4 px-5 text-xs sm:text-sm font-bold text-slate-200 uppercase tracking-wider">
                 {locale === 'id' ? 'Kriteria' : 'Criteria'}
               </th>
-              <th className="py-4 px-5 text-xs font-bold text-primary-light uppercase tracking-wider bg-primary/10 border-x border-border-subtle">
+              <th className="py-4 px-5 text-xs sm:text-sm font-extrabold text-primary-light uppercase tracking-wider bg-primary/10 border-x border-border-subtle">
                 QiCraft (Static & Private)
               </th>
-              <th className="py-4 px-5 text-xs font-semibold text-slate-400 uppercase tracking-wider">
+              <th className="py-4 px-5 text-xs sm:text-sm font-bold text-slate-300 uppercase tracking-wider">
                 Commercial Dynamic QR Services
               </th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-border-subtle text-xs">
+          <tbody className="divide-y divide-border-subtle text-xs sm:text-sm">
             {rows.map((row, idx) => (
               <tr key={idx} className="hover:bg-surface-hover/30 transition-colors">
-                <td className="py-3.5 px-5 font-semibold text-slate-200">
+                <td className="py-4 px-5 font-semibold text-white">
                   {locale === 'id' ? row.featureId : row.featureEn}
                 </td>
-                <td className="py-3.5 px-5 font-medium text-slate-100 bg-primary/5 border-x border-border-subtle">
-                  <div className="flex items-center gap-2">
-                    <div className="w-4 h-4 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center flex-shrink-0">
-                      <Check className="w-3 h-3" />
+                <td className="py-4 px-5 font-medium text-slate-100 bg-primary/5 border-x border-border-subtle">
+                  <div className="flex items-center gap-2.5">
+                    <div className="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center flex-shrink-0">
+                      <Check className="w-3.5 h-3.5" />
                     </div>
-                    <span>{row.qicraft.val}</span>
+                    <span className="text-emerald-300 font-medium">{row.qicraft.val}</span>
                   </div>
                 </td>
-                <td className="py-3.5 px-5 text-slate-400">
-                  <div className="flex items-center gap-2">
-                    <div className="w-4 h-4 rounded-full bg-red-500/20 text-red-400 flex items-center justify-center flex-shrink-0">
-                      <X className="w-3 h-3" />
+                <td className="py-4 px-5 text-slate-300">
+                  <div className="flex items-center gap-2.5">
+                    <div className="w-5 h-5 rounded-full bg-red-500/20 text-red-400 flex items-center justify-center flex-shrink-0">
+                      <X className="w-3.5 h-3.5" />
                     </div>
                     <span>{row.commercial.val}</span>
                   </div>

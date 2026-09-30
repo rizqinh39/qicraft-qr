@@ -4,7 +4,7 @@ import { t } from '../../i18n';
 import { Shield, Infinity, DatabaseZap, ScanLine } from 'lucide-react';
 
 export const Footer: React.FC = () => {
-  const { locale } = useUIStore();
+  const { locale, setActiveView } = useUIStore();
 
   const trustPillars = [
     {
@@ -51,10 +51,10 @@ export const Footer: React.FC = () => {
                 {item.icon}
               </div>
               <div>
-                <h4 className="text-xs font-semibold text-slate-100">
+                <h4 className="text-xs font-semibold text-white">
                   {locale === 'id' ? item.titleId : item.titleEn}
                 </h4>
-                <p className="text-[11px] text-slate-400 leading-tight mt-0.5">
+                <p className="text-xs text-slate-300 leading-snug mt-0.5">
                   {locale === 'id' ? item.descId : item.descEn}
                 </p>
               </div>
@@ -65,10 +65,39 @@ export const Footer: React.FC = () => {
         {/* Footer Bottom */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <p>© {new Date().getFullYear()} QiCraft QR Studio. Built for open, permanent, and private digital infrastructure.</p>
-          <div className="flex items-center gap-4 text-slate-400">
-            <span className="hover:text-slate-200 cursor-pointer">{t('nav.howItWorks', locale)}</span>
+          <div className="flex items-center gap-4 text-slate-300">
+            <button
+              type="button"
+              onClick={() => {
+                setActiveView('how-it-works');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              className="hover:text-white transition-colors cursor-pointer"
+            >
+              {t('nav.howItWorks', locale)}
+            </button>
             <span>•</span>
-            <span className="hover:text-slate-200 cursor-pointer">{t('nav.templates', locale)}</span>
+            <button
+              type="button"
+              onClick={() => {
+                setActiveView('about');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              className="hover:text-white transition-colors cursor-pointer"
+            >
+              {locale === 'id' ? 'Tentang' : 'About'}
+            </button>
+            <span>•</span>
+            <button
+              type="button"
+              onClick={() => {
+                setActiveView('templates');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              className="hover:text-white transition-colors cursor-pointer"
+            >
+              {t('nav.templates', locale)}
+            </button>
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 import { Locale } from '../i18n/types';
 
-export type AppView = 'studio' | 'templates' | 'how-it-works';
+export type AppView = 'studio' | 'templates' | 'how-it-works' | 'about';
 
 interface UIState {
   locale: Locale;

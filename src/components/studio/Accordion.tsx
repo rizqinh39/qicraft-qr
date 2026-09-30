@@ -25,7 +25,7 @@ export const Accordion: React.FC<AccordionProps> = ({
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className={`w-full p-4.5 sm:p-5 flex items-center justify-between text-left transition-colors relative ${
+        className={`w-full px-5 py-4 sm:px-6 sm:py-4.5 flex items-center justify-between text-left transition-colors relative ${
           isOpen ? 'bg-surface-hover/40' : 'hover:bg-surface-hover/20'
         }`}
       >
@@ -46,18 +46,18 @@ export const Accordion: React.FC<AccordionProps> = ({
               {badge}
             </div>
             {subtitle && (
-              <p className="text-xs text-slate-400 mt-0.5 leading-snug line-clamp-1">{subtitle}</p>
+              <p className="text-xs text-slate-300 mt-0.5 leading-snug line-clamp-1">{subtitle}</p>
             )}
           </div>
         </div>
 
-        <div className={`p-1 text-slate-400 transition-transform duration-200 ${isOpen ? 'rotate-180 text-primary-light' : ''}`}>
+        <div className={`p-1.5 rounded-md text-slate-400 transition-transform duration-200 ${isOpen ? 'rotate-180 text-primary-light' : ''}`}>
           <ChevronDown className="w-4 h-4" />
         </div>
       </button>
 
       {isOpen && (
-        <div className="p-4.5 sm:p-5 pt-3 border-t border-border-subtle/80 space-y-4">
+        <div className="p-5 sm:p-6 pt-3 border-t border-border-subtle/80 space-y-4">
           {children}
         </div>
       )}

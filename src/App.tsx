@@ -4,6 +4,7 @@ import { Footer } from './components/layout/Footer';
 import { StudioView } from './components/studio/StudioView';
 import { TemplatesGallery } from './components/templates/TemplatesGallery';
 import { HowItWorksView } from './components/how-it-works/HowItWorksView';
+import { AboutView } from './components/about/AboutView';
 
 export default function App() {
   const { activeView, toastMessage } = useUIStore();
@@ -26,6 +27,7 @@ export default function App() {
         {activeView === 'studio' && <StudioView />}
         {activeView === 'templates' && <TemplatesGallery />}
         {activeView === 'how-it-works' && <HowItWorksView />}
+        {activeView === 'about' && <AboutView />}
       </main>
 
       <Footer />

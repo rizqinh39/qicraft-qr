@@ -40,31 +40,33 @@ export const FaqAccordion: React.FC = () => {
   ];
 
   return (
-    <div className="space-y-3">
+    <div className="space-y-3.5">
       {faqs.map((faq, idx) => {
         const isOpen = openIndex === idx;
         return (
           <div
             key={idx}
-            className="rounded-xl bg-surface-card border border-border-subtle overflow-hidden transition-all"
+            className="rounded-xl bg-surface-card border border-border-subtle overflow-hidden shadow-sm hover:border-slate-500/50 transition-all"
           >
             <button
               type="button"
               onClick={() => setOpenIndex(isOpen ? null : idx)}
-              className="w-full p-4.5 text-left flex items-center justify-between gap-4 hover:bg-surface-hover/30 transition-colors"
+              className="w-full px-5 py-4 sm:px-6 sm:py-4.5 text-left flex items-center justify-between gap-4 hover:bg-surface-hover/40 transition-colors"
             >
-              <div className="flex items-center gap-3">
-                <HelpCircle className="w-4 h-4 text-primary-light flex-shrink-0" />
-                <span className="text-xs sm:text-sm font-semibold text-white">
+              <div className="flex items-center gap-3.5">
+                <div className="p-1.5 rounded-md bg-primary/10 text-primary-light flex-shrink-0">
+                  <HelpCircle className="w-4 h-4 sm:w-5 sm:h-5" />
+                </div>
+                <span className="text-sm sm:text-base font-semibold text-white leading-snug">
                   {locale === 'id' ? faq.qId : faq.qEn}
                 </span>
               </div>
-              <div className={`p-1 text-slate-400 transition-transform duration-200 ${isOpen ? 'rotate-180 text-primary-light' : ''}`}>
-                <ChevronDown className="w-4 h-4" />
+              <div className={`p-1.5 rounded-md text-slate-400 hover:text-white transition-transform duration-200 flex-shrink-0 ${isOpen ? 'rotate-180 text-primary-light' : ''}`}>
+                <ChevronDown className="w-4 h-4 sm:w-5 sm:h-5" />
               </div>
             </button>
             {isOpen && (
-              <div className="p-4.5 pt-1 text-xs text-slate-400 leading-relaxed border-t border-border-subtle/60 bg-bg-base/30">
+              <div className="px-5 py-4 sm:px-6 sm:py-5 text-sm text-slate-200 leading-relaxed border-t border-border-subtle/80 bg-bg-base/60">
                 {locale === 'id' ? faq.aId : faq.aEn}
               </div>
             )}

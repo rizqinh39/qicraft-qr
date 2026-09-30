@@ -49,17 +49,17 @@ export const PipelineDiagram: React.FC = () => {
         >
           <div>
             <div className="flex items-center justify-between mb-4">
-              <span className="text-xl font-extrabold font-mono text-slate-500">
+              <span className="text-xl font-black font-mono text-slate-400">
                 {step.num}
               </span>
-              <div className="p-2.5 rounded-lg bg-bg-base border border-border-subtle">
+              <div className="p-2.5 rounded-lg bg-bg-base border border-border-subtle shadow-sm">
                 {step.icon}
               </div>
             </div>
-            <h3 className="text-sm font-bold text-white mb-2">
+            <h3 className="text-sm sm:text-base font-bold text-white mb-2">
               {locale === 'id' ? step.titleId : step.titleEn}
             </h3>
-            <p className="text-xs text-slate-400 leading-relaxed">
+            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-normal">
               {locale === 'id' ? step.descId : step.descEn}
             </p>
           </div>

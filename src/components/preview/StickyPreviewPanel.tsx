@@ -35,8 +35,8 @@ export const StickyPreviewPanel: React.FC = () => {
         <div className="flex items-center gap-2">
           <Layers className="w-3.5 h-3.5 text-primary-light" />
           <div>
-            <span className="text-[10px] text-slate-500 block leading-none">Format</span>
-            <span className="font-semibold text-slate-200">
+            <span className="text-xs text-slate-400 block leading-tight">Format</span>
+            <span className="font-semibold text-slate-200 text-xs">
               {config.style.dotsType} / {config.style.cornerSquareType}
             </span>
           </div>
@@ -45,8 +45,8 @@ export const StickyPreviewPanel: React.FC = () => {
         <div className="flex items-center gap-2 border-l border-border-subtle/60 pl-3">
           <Printer className="w-3.5 h-3.5 text-emerald-400" />
           <div>
-            <span className="text-[10px] text-slate-500 block leading-none">Print Scale</span>
-            <span className="font-semibold text-slate-200 font-mono">
+            <span className="text-xs text-slate-400 block leading-tight">Print Scale</span>
+            <span className="font-semibold text-slate-200 font-mono text-xs">
               ~{printCalc.cm.toFixed(1)} cm ({printConfig.dpi} DPI)
             </span>
           </div>
