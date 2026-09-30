@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container":"#171f33","surface-container-high":"#222a3d","secondary-container":"#00a572","tertiary-fixed-dim":"#bdc2ff","tertiary-fixed":"#e0e0ff","on-secondary-container":"#00311f","surface-variant":"#2d3449","background":"#0b1326","secondary-fixed-dim":"#4edea3","on-primary-container":"#0d0096","inverse-primary":"#494bd6","tertiary-container":"#7c87f3","secondary":"#4edea3","error-container":"#93000a","error":"#ffb4ab","on-surface":"#dae2fd","surface-bright":"#31394d","on-surface-variant":"#c7c4d7","primary-fixed":"#e1e0ff","on-primary-fixed":"#07006c","secondary-fixed":"#6ffbbe","inverse-surface":"#dae2fd","surface-container-lowest":"#060e20","on-secondary-fixed-variant":"#005236","primary-container":"#8083ff","on-secondary-fixed":"#002113","on-tertiary-fixed":"#000767","outline-variant":"#464554","surface-container-highest":"#2d3449","on-tertiary-fixed-variant":"#2f3aa3","surface":"#0b1326","surface-container-low":"#131b2e","on-tertiary-container":"#081486","on-secondary":"#003824","on-error":"#690005","inverse-on-surface":"#283044","on-tertiary":"#131e8c","on-error-container":"#ffdad6","primary":"#c0c1ff","tertiary":"#bdc2ff","on-primary-fixed-variant":"#2f2ebe","primary-fixed-dim":"#c0c1ff","surface-tint":"#c0c1ff","outline":"#908fa0","on-background":"#dae2fd","surface-dim":"#0b1326","on-primary":"#1000a9"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-md":"1rem","space-2xl":"3rem","space-sm":"0.5rem","gutter-mobile":"1rem","space-xl":"2rem","space-lg":"1.5rem","margin":"2rem","margin-mobile":"1rem","space-xs":"0.25rem","gutter":"1.5rem"},"fontFamily":{"headline-md":["Inter"],"headline-lg":["Inter"],"code-inline":["Inter"],"label-sm":["Inter"],"label-md":["Inter"],"headline-xl-mobile":["Inter"],"body-md":["Inter"],"headline-xl":["Inter"],"body-lg":["Inter"]},"fontSize":{"headline-md":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"code-inline":["12px",{"lineHeight":"16px","fontWeight":"500"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"label-md":["13px",{"lineHeight":"18px","fontWeight":"500"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm group" data-path="generator" href="#"><img alt="QiCraft Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XeNFitI05oe7M0o1Xf9CLNnTedxGH5_8ASA8FA1otk9dTlsOKvmsNDpPCnzuYqz7gIYprIc1xzjaTct2htNoBEbG-iMlrMCOWHxeOu20fgUiPdh52Lbx4BxRej8tS2hBBC16RRISk3PHs8rtLwx_SSY1C-LneEbJ__rGhaOq5iH3NNPxt-Tat9Xxv1kyg1S-XlH2QO2pCPBnSqIWGjkC6_gQ7b5LbY3p_-zE6SwiybeCfDXjBUIC1ZjY2G"/><span class="font-headline-md text-headline-md text-on-surface tracking-tight">QiCraft</span></a><span class="hidden sm:inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm border border-secondary/20">Qinur's Static &amp; Private</span></div><nav class="hidden md:flex items-center gap-space-xs" data-active-classes="bg-surface-container text-on-surface font-semibold rounded-lg"><a class="px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="generator" href="#">Generator</a><a class="px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="templates" href="#">Templates</a><a aria-current="page" class="px-3 py-1.5 transition-colors bg-surface-container text-on-surface font-semibold rounded-lg" data-path="how-it-works" href="#">How it Works</a><a class="px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="about" href="#">About Static QR</a></nav><div class="flex items-center gap-space-sm"><button aria-label="Toggle dark and light theme" class="p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">dark_mode</span></button><a class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" href="https://github.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">code</span><span class="font-label-md text-label-md">GitHub</span><span class="ml-1 px-1.5 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-code-inline text-code-inline">★ 2.4k</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Interactive Ambient Glow Canvas -->
+<div class="relative w-full overflow-hidden px-6 lg:px-12 py-space-xl">
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[720px] h-[340px] bg-primary/10 rounded-full blur-[140px] pointer-events-none"></div>
+<div class="absolute top-48 right-12 w-80 h-80 bg-secondary/10 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="max-w-7xl mx-auto flex flex-col items-center text-center relative z-10">
+<!-- Badge Pill -->
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container-high shadow-sm mb-space-md">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-md text-label-md text-secondary tracking-wide uppercase">Deep Dive: Static vs Dynamic QR</span>
+</div>
+<!-- Headline -->
+<h1 class="font-headline-xl text-headline-xl text-on-surface max-w-4xl tracking-tight leading-tight">
+        How Static QR Codes Work — And Why They Never Expire
+      </h1>
+<!-- Subtitle -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mt-space-md leading-relaxed">
+        Unlike dynamic QR codes that rely on external redirect servers and monthly subscriptions, static QR codes bake your data directly into the pixel matrix using Reed-Solomon mathematical algorithms.
+      </p>
+<!-- Key Value Badges -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm w-full max-w-3xl mt-space-xl">
+<div class="p-space-md rounded-xl bg-surface-container text-left shadow-sm">
+<div class="font-code-inline text-code-inline text-primary uppercase tracking-wider mb-1">Architecture</div>
+<div class="font-headline-md text-headline-md text-on-surface">100% Client-Side</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1">Zero network transit</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container text-left shadow-sm">
+<div class="font-code-inline text-code-inline text-secondary uppercase tracking-wider mb-1">Standard</div>
+<div class="font-headline-md text-headline-md text-on-surface">ISO/IEC 18004</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1">Universal device parity</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container text-left shadow-sm">
+<div class="font-code-inline text-code-inline text-primary uppercase tracking-wider mb-1">Durability</div>
+<div class="font-headline-md text-headline-md text-on-surface">Permanent</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1">Decodes completely offline</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container text-left shadow-sm">
+<div class="font-code-inline text-code-inline text-secondary uppercase tracking-wider mb-1">Redundancy</div>
+<div class="font-headline-md text-headline-md text-on-surface">Reed-Solomon</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1">Up to 30% error healing</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive 4-Step Architecture Pipeline -->
+<section class="w-full px-6 lg:px-12 py-space-2xl bg-surface-container-lowest relative">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-code-inline text-code-inline text-primary tracking-widest uppercase">Internal Engine Walkthrough</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">The 4-Step Mathematical Pipeline</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Explore how raw characters are transformed into mathematically hardened optical patterns in under 12 milliseconds inside your browser sandbox.
+        </p>
+</div>
+<!-- Pipeline Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Step 1 -->
+<div class="group relative flex flex-col justify-between p-space-lg rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors shadow-md min-h-[360px]">
+<div class="flex flex-col">
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-code-inline text-code-inline px-2 py-0.5 rounded-full bg-primary/10 text-primary">STEP 01</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">memory</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-space-xs">Direct Data Encoding</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-md">
+              Text, URL, or vCard payload is encoded directly into binary bits via WebAssembly in your browser memory. No backend server is ever touched.
+            </p>
+</div>
+<!-- Tech Visual Widget -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest font-code-inline text-code-inline text-on-surface-variant space-y-1">
+<div class="flex items-center justify-between text-secondary">
+<span>WASM Sandbox</span>
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+</div>
+<div class="truncate text-outline">Payload: <span class="text-on-surface">https://qicraft.dev/docs</span></div>
+<div class="truncate text-outline">Binary: <span class="text-primary">01000110 01110010 01101111...</span></div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="group relative flex flex-col justify-between p-space-lg rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors shadow-md min-h-[360px]">
+<div class="flex flex-col">
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-code-inline text-code-inline px-2 py-0.5 rounded-full bg-secondary/10 text-secondary">STEP 02</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">format_image_left</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-space-xs">Reed-Solomon Parity Protection</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-md">
+              Error correction codewords (Level L 7% to Level H 30%) are interleaved, ensuring scannability even if the QR code is scratched, smudged, or partially obscured.
+            </p>
+</div>
+<!-- Tech Visual Widget -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest font-code-inline text-code-inline text-on-surface-variant">
+<div class="flex justify-between items-center mb-1.5">
+<span class="text-on-surface">Parity Matrix (H-Level)</span>
+<span class="text-secondary font-semibold">30% Recovery</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden flex">
+<div class="h-full bg-primary" style="width: 70%;"></div>
+<div class="h-full bg-secondary" style="width: 30%;"></div>
+</div>
+<div class="flex justify-between text-[10px] text-outline mt-1.5">
+<span>70% Payload</span>
+<span>30% RS Parity</span>
+</div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="group relative flex flex-col justify-between p-space-lg rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors shadow-md min-h-[360px]">
+<div class="flex flex-col">
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-code-inline text-code-inline px-2 py-0.5 rounded-full bg-primary/10 text-primary">STEP 03</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">draw</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-space-xs">Vector Matrix Synthesis</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-md">
+              Geometric shapes, rounded corner eyes, and brand emblem halos are generated as pure mathematical SVG paths ready for sharp print export.
+            </p>
+</div>
+<!-- Tech Visual Widget -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest font-code-inline text-code-inline text-on-surface-variant flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">polyline</span>
+<span class="text-on-surface">Paths: &lt;path d="..."/&gt;</span>
+</div>
+<span class="text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant">300 DPI Vector</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="group relative flex flex-col justify-between p-space-lg rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors shadow-md min-h-[360px]">
+<div class="flex flex-col">
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-code-inline text-code-inline px-2 py-0.5 rounded-full bg-secondary/10 text-secondary">STEP 04</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">qr_code_scanner</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-space-xs">Permanent Offline Optical Scans</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-md">
+              Any camera sensor decodes the payload strictly by reading light and dark modules. Because there is no intermediary domain or redirect URL, it works forever with zero telemetry.
+            </p>
+</div>
+<!-- Tech Visual Widget -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest font-code-inline text-code-inline text-on-surface-variant space-y-1">
+<div class="flex items-center justify-between text-secondary">
+<span>Decoder Hardware</span>
+<span class="px-1.5 py-0.2 rounded bg-secondary/20 text-secondary font-label-sm">Offline</span>
+</div>
+<div class="text-outline truncate">DNS Queries: <span class="text-on-surface">0</span> | Ping: <span class="text-secondary">&lt; 1ms</span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Visual Breakdown / Schematic -->
+<section class="w-full px-6 lg:px-12 py-space-2xl">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left: Interactive Visual Simulation Diagram -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<div class="p-space-lg rounded-xl bg-surface-container shadow-xl">
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container-highest mb-space-md">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<span class="font-code-inline text-code-inline text-on-surface-variant ml-2">matrix_inspector.wasm</span>
+</div>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-secondary/15 text-secondary">Optical Parity Confirmed</span>
+</div>
+<!-- Synthetic QR Representation with Error Tolerance Hotspots -->
+<div class="relative w-full aspect-square max-w-sm mx-auto bg-surface-container-lowest p-6 rounded-lg flex items-center justify-center">
+<!-- Simulated QR Matrix -->
+<svg class="w-full h-full text-on-surface" fill="none" viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<!-- Top Left Finder Pattern -->
+<rect fill="currentColor" fill-opacity="0.9" height="50" rx="6" width="50" x="10" y="10"></rect>
+<rect fill="#060e20" height="30" rx="3" width="30" x="20" y="20"></rect>
+<rect fill="currentColor" height="18" rx="2" width="18" x="26" y="26"></rect>
+<!-- Top Right Finder Pattern -->
+<rect fill="currentColor" fill-opacity="0.9" height="50" rx="6" width="50" x="140" y="10"></rect>
+<rect fill="#060e20" height="30" rx="3" width="30" x="150" y="20"></rect>
+<rect fill="currentColor" height="18" rx="2" width="18" x="156" y="26"></rect>
+<!-- Bottom Left Finder Pattern -->
+<rect fill="currentColor" fill-opacity="0.9" height="50" rx="6" width="50" x="10" y="140"></rect>
+<rect fill="#060e20" height="30" rx="3" width="30" x="20" y="150"></rect>
+<rect fill="currentColor" height="18" rx="2" width="18" x="26" y="156"></rect>
+<!-- Timing Patterns -->
+<rect fill="currentColor" height="8" rx="2" width="8" x="66" y="14"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="80" y="14"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="94" y="14"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="108" y="14"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="122" y="14"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="14" y="66"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="14" y="80"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="14" y="94"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="14" y="108"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="14" y="122"></rect>
+<!-- Random Payload Data Modules -->
+<rect fill="#8083ff" height="10" rx="2" width="10" x="70" y="70"></rect>
+<rect fill="#8083ff" height="10" rx="2" width="10" x="86" y="70"></rect>
+<rect fill="#8083ff" height="10" rx="2" width="10" x="102" y="70"></rect>
+<rect fill="#8083ff" height="10" rx="2" width="10" x="118" y="70"></rect>
+<rect fill="#8083ff" height="10" rx="2" width="10" x="70" y="86"></rect>
+<rect fill="#4edea3" height="10" rx="2" width="10" x="102" y="86"></rect>
+<rect fill="#4edea3" height="10" rx="2" width="10" x="118" y="86"></rect>
+<rect fill="#4edea3" height="10" rx="2" width="10" x="70" y="102"></rect>
+<rect fill="#4edea3" height="10" rx="2" width="10" x="86" y="102"></rect>
+<rect fill="#8083ff" height="10" rx="2" width="10" x="118" y="102"></rect>
+<rect fill="#8083ff" height="10" rx="2" width="10" x="70" y="118"></rect>
+<rect fill="#8083ff" height="10" rx="2" width="10" x="86" y="118"></rect>
+<rect fill="#8083ff" height="10" rx="2" width="10" x="102" y="118"></rect>
+<!-- Alignment Pattern -->
+<rect fill="currentColor" fill-opacity="0.8" height="30" rx="4" width="30" x="144" y="144"></rect>
+<rect fill="#060e20" height="18" rx="2" width="18" x="150" y="150"></rect>
+<rect fill="currentColor" height="10" rx="1.5" width="10" x="154" y="154"></rect>
+<!-- Central Protected Emblem Halo Zone -->
+<circle cx="100" cy="100" fill="#0b1326" r="18" stroke="#4edea3" stroke-dasharray="3 3" stroke-width="2"></circle>
+<path d="M96 95L100 99L105 92" stroke="#4edea3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<!-- Holographic Overlays for Pedagogical Clarity -->
+<div class="absolute bottom-3 left-3 px-2 py-1 rounded bg-surface/90 text-label-sm font-label-sm text-secondary flex items-center gap-1.5 shadow">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> 30% RS Redundancy Shield
+            </div>
+</div>
+<div class="grid grid-cols-3 gap-space-sm mt-space-md text-center">
+<div class="p-space-xs rounded bg-surface-container-high">
+<span class="font-code-inline text-code-inline text-outline">Modules</span>
+<div class="font-headline-md text-headline-md text-on-surface">33 × 33</div>
+</div>
+<div class="p-space-xs rounded bg-surface-container-high">
+<span class="font-code-inline text-code-inline text-outline">Version</span>
+<div class="font-headline-md text-headline-md text-on-surface">v4 ISO</div>
+</div>
+<div class="p-space-xs rounded bg-surface-container-high">
+<span class="font-code-inline text-code-inline text-outline">Decode Time</span>
+<div class="font-headline-md text-headline-md text-secondary">0.4 ms</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Narrative Context -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<span class="font-code-inline text-code-inline text-secondary tracking-widest uppercase">Zero Intermediary Architecture</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">
+          Bypassing the URL Shortener Trap
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+          Most commercial QR platforms act as cloaked redirect proxies. They encode a short link (e.g. <span class="font-code-inline text-primary">qr.vendor.io/xyz</span>) that routes to their servers before redirecting to your destination.
+        </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          The moment you stop paying their monthly subscription, they redirect your printed codes to paywalls or 404 pages. 
+          <strong class="text-on-surface font-semibold">QiCraft static codes contain the final endpoint or text directly</strong>, making them physically immune to shutdowns, acquisitions, rate limits, or billing disputes.
+        </p>
+<div class="flex flex-col gap-space-sm mt-space-sm">
+<div class="flex items-start gap-space-sm p-space-md rounded-lg bg-surface-container">
+<span class="material-symbols-outlined text-secondary text-[22px] mt-0.5">verified_user</span>
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface">Cryptographically Pure &amp; Verifiable</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">The resulting matrix conforms to ISO/IEC 18004. Open your native phone camera offline in airplane mode to test; it scans instantly.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-md rounded-lg bg-surface-container">
+<span class="material-symbols-outlined text-secondary text-[22px] mt-0.5">public_off</span>
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface">No Telemetry Fingerprinting</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Users scanning your codes connect directly to your domain with no third-party scripts logging their geolocation, OS, or cellular IP.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Comparison Matrix Table -->
+<section class="w-full px-6 lg:px-12 py-space-2xl bg-surface-container-low">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<div class="text-center max-w-3xl mx-auto">
+<span class="font-code-inline text-code-inline text-primary tracking-widest uppercase">The Definitive Tradeoff</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface mt-1">QiCraft Static vs Commercial Dynamic QR</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm">
+          Understand why engineering, privacy, and print teams choose static direct encoding over proprietary closed redirect silos.
+        </p>
+</div>
+<!-- Matrix Container -->
+<div class="w-full overflow-x-auto rounded-xl bg-surface-container shadow-xl">
+<table class="w-full text-left border-collapse min-w-[640px]">
+<thead>
+<tr class="bg-surface-container-high">
+<th class="p-space-lg font-headline-md text-headline-md text-on-surface w-1/3">Feature / Capability</th>
+<th class="p-space-lg font-headline-md text-headline-md text-secondary w-1/3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">bolt</span>
+<span>QiCraft Static QR</span>
+</div>
+</th>
+<th class="p-space-lg font-headline-md text-headline-md text-outline w-1/3">Standard Dynamic QR (Competitors)</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-highest">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-high/50 transition-colors">
+<td class="p-space-lg">
+<div class="font-headline-md text-headline-md text-on-surface">Expiration Date</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Lifespan of printed code</div>
+</td>
+<td class="p-space-lg bg-surface-container/60">
+<div class="flex items-center gap-2 text-secondary font-headline-md text-headline-md">
+<span class="material-symbols-outlined text-[18px]">all_inclusive</span>
+<span>Never — Permanent Optical Code</span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1">Direct module reading; valid as long as medium survives</div>
+</td>
+<td class="p-space-lg text-on-surface-variant">
+<div class="flex items-center gap-2 text-error font-headline-md text-headline-md">
+<span class="material-symbols-outlined text-[18px]">timer_off</span>
+<span>Expires when subscription lapses</span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1">Vendor cuts redirect after billing cycle ends</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-high/50 transition-colors">
+<td class="p-space-lg">
+<div class="font-headline-md text-headline-md text-on-surface">Privacy &amp; Tracking</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Data harvesting exposure</div>
+</td>
+<td class="p-space-lg bg-surface-container/60">
+<div class="flex items-center gap-2 text-secondary font-headline-md text-headline-md">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Zero server logging, 100% Client-side</span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1">Strict adherence to zero-knowledge browser memory</div>
+</td>
+<td class="p-space-lg text-on-surface-variant">
+<div class="flex items-center gap-2 text-outline font-headline-md text-headline-md">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+<span>IP, location, and user tracking</span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1">Redirect server logs scanner fingerprint before forward</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-high/50 transition-colors">
+<td class="p-space-lg">
+<div class="font-headline-md text-headline-md text-on-surface">Latency &amp; Speed</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Scan to destination resolution</div>
+</td>
+<td class="p-space-lg bg-surface-container/60">
+<div class="flex items-center gap-2 text-secondary font-headline-md text-headline-md">
+<span class="material-symbols-outlined text-[18px]">speed</span>
+<span>Instant hardware decode</span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1">Camera OS directly parses intent with 0 network hops</div>
+</td>
+<td class="p-space-lg text-on-surface-variant">
+<div class="flex items-center gap-2 text-outline font-headline-md text-headline-md">
+<span class="material-symbols-outlined text-[18px]">hourglass_empty</span>
+<span>Redirect hop through cloud proxy</span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1">Adds 350-900ms delay depending on vendor CDN</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-high/50 transition-colors">
+<td class="p-space-lg">
+<div class="font-headline-md text-headline-md text-on-surface">Recurring Cost</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Ongoing upkeep fees</div>
+</td>
+<td class="p-space-lg bg-surface-container/60">
+<div class="flex items-center gap-2 text-secondary font-headline-md text-headline-md">
+<span class="material-symbols-outlined text-[18px]">money_off</span>
+<span>Free &amp; Open Source</span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1">No billing systems, no account requirements</div>
+</td>
+<td class="p-space-lg text-on-surface-variant">
+<div class="flex items-center gap-2 text-error font-headline-md text-headline-md">
+<span class="material-symbols-outlined text-[18px]">credit_card</span>
+<span>$15 – $49 / month</span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1">Annual cost escalates with multiple campaigns</div>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-high/50 transition-colors">
+<td class="p-space-lg">
+<div class="font-headline-md text-headline-md text-on-surface">Scan Limits</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Throughput threshold</div>
+</td>
+<td class="p-space-lg bg-surface-container/60">
+<div class="flex items-center gap-2 text-secondary font-headline-md text-headline-md">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Unlimited for life</span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1">Scales to billions of physical scans at zero marginal cost</div>
+</td>
+<td class="p-space-lg text-on-surface-variant">
+<div class="flex items-center gap-2 text-outline font-headline-md text-headline-md">
+<span class="material-symbols-outlined text-[18px]">block</span>
+<span>Capped monthly quotas</span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1">Often pauses campaigns at 500-1,000 monthly hits</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- Technical FAQ Accordion Section -->
+<section class="w-full px-6 lg:px-12 py-space-2xl">
+<div class="max-w-4xl mx-auto flex flex-col gap-space-lg">
+<div class="text-center">
+<span class="font-code-inline text-code-inline text-primary tracking-widest uppercase">Specifications &amp; Clarifications</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface mt-1">Technical Architecture FAQ</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm">
+          Everything you need to know about physical vector exports, error correction math, and immutability.
+        </p>
+</div>
+<div class="flex flex-col gap-space-md mt-space-md" id="faq-container">
+<!-- FAQ Item 1 -->
+<div class="faq-item rounded-xl bg-surface-container overflow-hidden shadow-sm transition-all duration-200">
+<button class="faq-toggle w-full p-space-lg flex items-center justify-between text-left group hover:bg-surface-container-high transition-colors" type="button">
+<span class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">help_outline</span>
+              Can a static QR code be edited later?
+            </span>
+<span class="material-symbols-outlined text-outline group-hover:text-on-surface transition-transform duration-300 faq-icon text-[24px]">expand_more</span>
+</button>
+<div class="faq-content px-space-lg pb-space-lg text-on-surface-variant font-body-md text-body-md hidden border-t border-surface-container-highest/40 pt-space-md leading-relaxed">
+<p>
+              By mathematical definition, no. The binary characters of your data form the physical black and white modules of the matrix itself. If you alter the text or destination URL, the optical pattern must change.
+            </p>
+<p class="mt-2 text-on-surface">
+<strong class="text-secondary">Engineering Best Practice:</strong> If you anticipate needing to route to future promotions or dynamic endpoints while retaining static longevity, point your static QR code to your own permanent domain vanity path (e.g., <code class="px-1.5 py-0.5 rounded bg-surface-container-lowest text-primary font-code-inline">yoursite.com/go/menu</code>). This gives you total control over server-level 301 redirects without relying on high-cost third-party QR saas vendors.
+            </p>
+</div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="faq-item rounded-xl bg-surface-container overflow-hidden shadow-sm transition-all duration-200">
+<button class="faq-toggle w-full p-space-lg flex items-center justify-between text-left group hover:bg-surface-container-high transition-colors" type="button">
+<span class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px]">verified</span>
+              Why choose Error Correction H (High, 30%)?
+            </span>
+<span class="material-symbols-outlined text-outline group-hover:text-on-surface transition-transform duration-300 faq-icon text-[24px]">expand_more</span>
+</button>
+<div class="faq-content px-space-lg pb-space-lg text-on-surface-variant font-body-md text-body-md hidden border-t border-surface-container-highest/40 pt-space-md leading-relaxed">
+<p>
+              Reed-Solomon Level H allocates 30% of the entire grid payload to redundancy polynomials. This serves two vital real-world functions:
+            </p>
+<ul class="list-disc list-inside mt-2 space-y-1 text-on-surface">
+<li><strong class="text-secondary">Emblem &amp; Logo Insertion:</strong> You can position custom brand logos over the center of the code without breaking scannability because the remaining 70% of the code reconstructs all original data bytes.</li>
+<li><strong class="text-secondary">Industrial Resistance:</strong> Physical signage, outdoor posters, and product packaging subject to scratches, folds, rain, or glare continue scanning effortlessly even with nearly a third of the print obscured.</li>
+</ul>
+</div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="faq-item rounded-xl bg-surface-container overflow-hidden shadow-sm transition-all duration-200">
+<button class="faq-toggle w-full p-space-lg flex items-center justify-between text-left group hover:bg-surface-container-high transition-colors" type="button">
+<span class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">layers</span>
+              Are SVGs better than PNGs for commercial print?
+            </span>
+<span class="material-symbols-outlined text-outline group-hover:text-on-surface transition-transform duration-300 faq-icon text-[24px]">expand_more</span>
+</button>
+<div class="faq-content px-space-lg pb-space-lg text-on-surface-variant font-body-md text-body-md hidden border-t border-surface-container-highest/40 pt-space-md leading-relaxed">
+<p>
+              Yes, unconditionally. PNG raster files are bound to pixel grids. When scaled up for billboards, packaging, or store window decals, raster images blur or anti-alias edges, introducing gray intermediary pixels that confuse optical scanner sensors.
+            </p>
+<p class="mt-2 text-on-surface">
+              QiCraft compiles SVG matrices using exact mathematical paths (<code class="px-1.5 py-0.5 rounded bg-surface-container-lowest text-primary font-code-inline">&lt;path d="..." /&gt;</code>). You can scale an SVG to a 20-foot outdoor billboard without losing crisp, pixel-perfect contrast at 2400+ DPI.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom CTA Banner -->
+<section class="w-full px-6 lg:px-12 py-space-2xl bg-surface-container-lowest">
+<div class="max-w-5xl mx-auto rounded-2xl bg-gradient-to-r from-surface-container via-surface-container-high to-surface-container p-space-xl sm:p-space-2xl shadow-2xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="absolute -right-24 -bottom-24 w-80 h-80 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex flex-col gap-2 max-w-xl text-center md:text-left z-10">
+<span class="font-code-inline text-code-inline text-secondary uppercase tracking-widest">Privacy-First Engine</span>
+<h3 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">
+          Ready to build scannable, permanent codes?
+        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Experience client-side synthesis. No login walls, zero tracking telemetry, and instant vector export.
+        </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-sm z-10 w-full md:w-auto">
+<a class="w-full sm:w-auto px-6 py-3.5 rounded-lg bg-inverse-primary hover:bg-primary-container text-on-primary font-headline-md text-headline-md flex items-center justify-center gap-2 shadow-lg transition-transform hover:-translate-y-0.5 active:translate-y-0" data-path="generator" href="#">
+<span class="material-symbols-outlined text-[20px]">qr_code_2</span>
+<span>Open Generator Studio</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Client-side Accordion Script -->
+<script>
+    document.querySelectorAll('.faq-toggle').forEach(button => {
+      button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector('.faq-icon');
+        const isHidden = content.classList.contains('hidden');
+        
+        // Close all
+        document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+        document.querySelectorAll('.faq-icon').forEach(i => i.classList.remove('rotate-180'));
+        
+        // Open clicked if was hidden
+        if (isHidden) {
+          content.classList.remove('hidden');
+          icon.classList.add('rotate-180');
+        }
+      });
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest"><div class="w-full bg-surface-container-low py-space-xl"><div class="max-w-7xl mx-auto px-6 lg:px-12"><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg"><div class="p-space-lg rounded-xl bg-surface-container"><div class="w-10 h-10 rounded-lg bg-secondary-container/20 text-secondary flex items-center justify-center mb-space-sm"><span class="material-symbols-outlined text-[24px]">lock</span></div><h4 class="font-headline-md text-headline-md text-on-surface mb-1">100% Static &amp; Client-Side</h4><p class="font-body-md text-body-md text-on-surface-variant">Data stays solely in your browser memory. No backend transmissions or logged telemetry.</p></div><div class="p-space-lg rounded-xl bg-surface-container"><div class="w-10 h-10 rounded-lg bg-secondary-container/20 text-secondary flex items-center justify-center mb-space-sm"><span class="material-symbols-outlined text-[24px]">all_inclusive</span></div><h4 class="font-headline-md text-headline-md text-on-surface mb-1">Never Expires</h4><p class="font-body-md text-body-md text-on-surface-variant">Zero external redirects or dependency chains. Encoded payloads work permanently offline.</p></div><div class="p-space-lg rounded-xl bg-surface-container"><div class="w-10 h-10 rounded-lg bg-secondary-container/20 text-secondary flex items-center justify-center mb-space-sm"><span class="material-symbols-outlined text-[24px]">visibility_off</span></div><h4 class="font-headline-md text-headline-md text-on-surface mb-1">No Cloud Database</h4><p class="font-body-md text-body-md text-on-surface-variant">Pure cryptographic standards and raster/vector compilation with no intermediate tracking proxy.</p></div><div class="p-space-lg rounded-xl bg-surface-container"><div class="w-10 h-10 rounded-lg bg-secondary-container/20 text-secondary flex items-center justify-center mb-space-sm"><span class="material-symbols-outlined text-[24px]">qr_code_scanner</span></div><h4 class="font-headline-md text-headline-md text-on-surface mb-1">Unlimited Scans Forever</h4><p class="font-body-md text-body-md text-on-surface-variant">Direct camera decoding ensures infinite read cycles without subscription limits or throttling.</p></div></div></div></div><div class="max-w-7xl mx-auto px-6 lg:px-12 py-space-xl flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img alt="QiCraft Logo" class="h-6 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XeNFitI05oe7M0o1Xf9CLNnTedxGH5_8ASA8FA1otk9dTlsOKvmsNDpPCnzuYqz7gIYprIc1xzjaTct2htNoBEbG-iMlrMCOWHxeOu20fgUiPdh52Lbx4BxRej8tS2hBBC16RRISk3PHs8rtLwx_SSY1C-LneEbJ__rGhaOq5iH3NNPxt-Tat9Xxv1kyg1S-XlH2QO2pCPBnSqIWGjkC6_gQ7b5LbY3p_-zE6SwiybeCfDXjBUIC1ZjY2G"/><span class="font-headline-md text-headline-md text-on-surface">QiCraft</span><span class="font-body-md text-body-md text-on-surface-variant ml-2">© 2024 QiCraft by Qinur. Built for uncompromising privacy.</span></div><div class="flex items-center gap-space-lg"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="generator" href="#">Generator</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="templates" href="#">Templates</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="how-it-works" href="#">How it Works</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#">About Static QR</a></div></div></footer></body></html>

@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container":"#171f33","surface-container-high":"#222a3d","secondary-container":"#00a572","tertiary-fixed-dim":"#bdc2ff","tertiary-fixed":"#e0e0ff","on-secondary-container":"#00311f","surface-variant":"#2d3449","background":"#0b1326","secondary-fixed-dim":"#4edea3","on-primary-container":"#0d0096","inverse-primary":"#494bd6","tertiary-container":"#7c87f3","secondary":"#4edea3","error-container":"#93000a","error":"#ffb4ab","on-surface":"#dae2fd","surface-bright":"#31394d","on-surface-variant":"#c7c4d7","primary-fixed":"#e1e0ff","on-primary-fixed":"#07006c","secondary-fixed":"#6ffbbe","inverse-surface":"#dae2fd","surface-container-lowest":"#060e20","on-secondary-fixed-variant":"#005236","primary-container":"#8083ff","on-secondary-fixed":"#002113","on-tertiary-fixed":"#000767","outline-variant":"#464554","surface-container-highest":"#2d3449","on-tertiary-fixed-variant":"#2f3aa3","surface":"#0b1326","surface-container-low":"#131b2e","on-tertiary-container":"#081486","on-secondary":"#003824","on-error":"#690005","inverse-on-surface":"#283044","on-tertiary":"#131e8c","on-error-container":"#ffdad6","primary":"#c0c1ff","tertiary":"#bdc2ff","on-primary-fixed-variant":"#2f2ebe","primary-fixed-dim":"#c0c1ff","surface-tint":"#c0c1ff","outline":"#908fa0","on-background":"#dae2fd","surface-dim":"#0b1326","on-primary":"#1000a9"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-md":"1rem","space-2xl":"3rem","space-sm":"0.5rem","gutter-mobile":"1rem","space-xl":"2rem","space-lg":"1.5rem","margin":"2rem","margin-mobile":"1rem","space-xs":"0.25rem","gutter":"1.5rem"},"fontFamily":{"headline-md":["Inter"],"headline-lg":["Inter"],"code-inline":["Inter"],"label-sm":["Inter"],"label-md":["Inter"],"headline-xl-mobile":["Inter"],"body-md":["Inter"],"headline-xl":["Inter"],"body-lg":["Inter"]},"fontSize":{"headline-md":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"code-inline":["12px",{"lineHeight":"16px","fontWeight":"500"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"label-md":["13px",{"lineHeight":"18px","fontWeight":"500"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm group" data-path="generator" href="#"><img alt="QiCraft Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XeNFitI05oe7M0o1Xf9CLNnTedxGH5_8ASA8FA1otk9dTlsOKvmsNDpPCnzuYqz7gIYprIc1xzjaTct2htNoBEbG-iMlrMCOWHxeOu20fgUiPdh52Lbx4BxRej8tS2hBBC16RRISk3PHs8rtLwx_SSY1C-LneEbJ__rGhaOq5iH3NNPxt-Tat9Xxv1kyg1S-XlH2QO2pCPBnSqIWGjkC6_gQ7b5LbY3p_-zE6SwiybeCfDXjBUIC1ZjY2G"/><span class="font-headline-md text-headline-md text-on-surface tracking-tight">QiCraft</span></a><span class="hidden sm:inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm border border-secondary/20">Qinur's Static &amp; Private</span></div><nav class="hidden md:flex items-center gap-space-xs" data-active-classes="bg-surface-container text-on-surface font-semibold rounded-lg"><a class="px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="generator" href="#">Generator</a><a aria-current="page" class="px-3 py-1.5 transition-colors bg-surface-container text-on-surface font-semibold rounded-lg" data-path="templates" href="#">Templates</a><a class="px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="how-it-works" href="#">How it Works</a><a class="px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="about" href="#">About Static QR</a></nav><div class="flex items-center gap-space-sm"><button aria-label="Toggle dark and light theme" class="p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">dark_mode</span></button><a class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" href="https://github.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">code</span><span class="font-label-md text-label-md">GitHub</span><span class="ml-1 px-1.5 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-code-inline text-code-inline">★ 2.4k</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<section class="relative w-full overflow-hidden pb-space-xl">
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[720px] h-[360px] bg-gradient-to-b from-primary/10 via-surface-container/50 to-transparent blur-3xl pointer-events-none rounded-full"></div>
+<div class="max-w-7xl mx-auto px-6 lg:px-12 pt-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-lg mb-space-xl">
+<div class="max-w-3xl">
+<div class="inline-flex items-center gap-space-xs px-3 py-1 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm mb-space-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            Static Payload Presets • Zero Telemetry
+          </div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">
+            Ready-to-Use Static QR Templates
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2 max-w-2xl">
+            Curated high-contrast, battle-tested vector presets optimized for retail, hospitality, tech badges, and events.
+          </p>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-end">
+<div class="bg-surface-container px-4 py-2.5 rounded-xl shadow-sm flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified_user</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider">Scannability Guarantee</span>
+<span class="font-code-inline text-code-inline text-on-surface-variant">ISO/IEC 18004 Validated</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-2xl shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-[20px] text-outline">search</span>
+<input class="w-full pl-11 pr-4 py-2.5 bg-surface-container rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-high transition-all" id="template-search-input" placeholder="Search templates by tag, payload (e.g., vCard, WPA3, Menu), or standard..." type="text"/>
+</div>
+<div class="flex items-center gap-space-xs self-end lg:self-auto">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider px-2">Sort By</span>
+<div class="inline-flex bg-surface-container rounded-lg p-1">
+<button class="px-3 py-1 text-on-surface bg-surface-container-highest rounded-md font-label-md text-label-md shadow-sm">Popular</button>
+<button class="px-3 py-1 text-on-surface-variant hover:text-on-surface rounded-md font-label-md text-label-md transition-colors">Payload Type</button>
+<button class="px-3 py-1 text-on-surface-variant hover:text-on-surface rounded-md font-label-md text-label-md transition-colors">High Fault Tolerance</button>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 text-nowrap scrollbar-none" id="category-pill-container">
+<button class="category-btn active px-3.5 py-1.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-sm transition-all" data-category="all">
+            All Templates (18)
+          </button>
+<button class="category-btn px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-all" data-category="hospitality">
+            Restaurant &amp; Menu
+          </button>
+<button class="category-btn px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-all" data-category="vcard">
+            Business Cards / vCard
+          </button>
+<button class="category-btn px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-all" data-category="wifi">
+            Wi-Fi Access Points
+          </button>
+<button class="category-btn px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-all" data-category="apps">
+            App Download
+          </button>
+<button class="category-btn px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-all" data-category="crypto">
+            Crypto &amp; Payment
+          </button>
+<button class="category-btn px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-all" data-category="event">
+            Event &amp; Passes
+          </button>
+</div>
+</div>
+</div>
+</section>
+<section class="max-w-7xl mx-auto px-6 lg:px-12 pb-space-2xl w-full">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg" id="templates-grid">
+<article class="template-card flex flex-col bg-surface-container rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group" data-tags="hospitality menu food direct pdf">
+<div class="relative bg-surface-container-low p-space-lg flex items-center justify-center min-h-[260px] overflow-hidden">
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-surface-variant/30 via-transparent to-transparent"></div>
+<div class="relative z-10 w-48 h-48 bg-surface-container-lowest p-3 rounded-xl shadow-lg flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
+<svg class="w-full h-full text-on-surface" fill="currentColor" viewbox="0 0 100 100">
+<rect fill="currentColor" height="24" rx="4" width="24" x="6" y="6"></rect>
+<rect fill="#060e20" height="16" rx="2" width="16" x="10" y="10"></rect>
+<rect fill="currentColor" height="8" rx="1.5" width="8" x="14" y="14"></rect>
+<rect fill="currentColor" height="24" rx="4" width="24" x="70" y="6"></rect>
+<rect fill="#060e20" height="16" rx="2" width="16" x="74" y="10"></rect>
+<rect fill="currentColor" height="8" rx="1.5" width="8" x="78" y="14"></rect>
+<rect fill="currentColor" height="24" rx="4" width="24" x="6" y="70"></rect>
+<rect fill="#060e20" height="16" rx="2" width="16" x="10" y="74"></rect>
+<rect fill="currentColor" height="8" rx="1.5" width="8" x="14" y="78"></rect>
+<rect height="5" rx="1.5" width="5" x="36" y="8"></rect>
+<rect height="5" rx="1.5" width="5" x="45" y="8"></rect>
+<rect height="5" rx="1.5" width="5" x="54" y="8"></rect>
+<rect height="5" rx="1.5" width="5" x="36" y="18"></rect>
+<rect height="5" rx="1.5" width="5" x="54" y="18"></rect>
+<rect height="5" rx="1.5" width="5" x="36" y="27"></rect>
+<rect height="5" rx="1.5" width="5" x="45" y="27"></rect>
+<rect height="5" rx="1.5" width="5" x="8" y="36"></rect>
+<rect height="5" rx="1.5" width="5" x="17" y="36"></rect>
+<rect height="5" rx="1.5" width="5" x="26" y="36"></rect>
+<rect height="5" rx="1.5" width="5" x="8" y="45"></rect>
+<rect height="5" rx="1.5" width="5" x="26" y="45"></rect>
+<rect height="5" rx="1.5" width="5" x="8" y="54"></rect>
+<rect height="5" rx="1.5" width="5" x="17" y="54"></rect>
+<rect height="5" rx="1.5" width="5" x="26" y="54"></rect>
+<rect height="6" rx="1.5" width="6" x="68" y="36"></rect>
+<rect height="6" rx="1.5" width="6" x="78" y="36"></rect>
+<rect height="6" rx="1.5" width="6" x="88" y="36"></rect>
+<rect height="6" rx="1.5" width="6" x="68" y="46"></rect>
+<rect height="6" rx="1.5" width="6" x="88" y="46"></rect>
+<rect height="6" rx="1.5" width="6" x="68" y="56"></rect>
+<rect height="6" rx="1.5" width="6" x="78" y="56"></rect>
+<rect height="6" rx="1.5" width="6" x="88" y="56"></rect>
+<rect height="5" rx="1.5" width="5" x="36" y="68"></rect>
+<rect height="5" rx="1.5" width="5" x="46" y="68"></rect>
+<rect height="5" rx="1.5" width="5" x="56" y="68"></rect>
+<rect height="5" rx="1.5" width="5" x="36" y="78"></rect>
+<rect height="5" rx="1.5" width="5" x="56" y="78"></rect>
+<rect height="5" rx="1.5" width="5" x="36" y="88"></rect>
+<rect height="5" rx="1.5" width="5" x="46" y="88"></rect>
+<rect height="5" rx="1.5" width="5" x="56" y="88"></rect>
+<rect height="5" rx="1.5" width="5" x="68" y="68"></rect>
+<rect height="5" rx="1.5" width="5" x="78" y="68"></rect>
+<rect height="5" rx="1.5" width="5" x="88" y="68"></rect>
+<rect height="5" rx="1.5" width="5" x="68" y="78"></rect>
+<rect height="5" rx="1.5" width="5" x="78" y="78"></rect>
+<rect height="5" rx="1.5" width="5" x="68" y="88"></rect>
+<rect height="5" rx="1.5" width="5" x="88" y="88"></rect>
+<circle cx="50" cy="50" fill="#060e20" r="13"></circle>
+<path d="M47 45v10m6-10v10m-3-10v10" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
+<circle cx="50" cy="43" fill="currentColor" r="2.5"></circle>
+</svg>
+</div>
+<div class="absolute top-3 left-3 bg-surface-container-highest/80 backdrop-blur-md px-2.5 py-1 rounded-md text-on-surface font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-secondary">restaurant</span>
+<span>Hospitality</span>
+</div>
+<div class="absolute top-3 right-3 bg-secondary-container/30 px-2.5 py-1 rounded-md text-secondary font-code-inline text-code-inline flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            100% Scan Score
+          </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Minimalist Cafe &amp; Bistro Menu</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              Clean dark slate QR with subtle rounded eyes, fork/spoon emblem badge. Direct PDF link, 100% scannable.
+            </p>
+<div class="grid grid-cols-3 gap-2 bg-surface-container-low p-2.5 rounded-lg mb-space-md text-center">
+<div>
+<span class="block font-label-sm text-label-sm text-outline uppercase tracking-wider">Error Corr</span>
+<span class="font-code-inline text-code-inline text-on-surface font-semibold">Level M (15%)</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-outline uppercase tracking-wider">Payload</span>
+<span class="font-code-inline text-code-inline text-on-surface font-semibold">HTTPS / Menu</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-outline uppercase tracking-wider">Module Style</span>
+<span class="font-code-inline text-code-inline text-on-surface font-semibold">Rounded 4px</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-space-xs">
+<button class="flex-1 py-2 px-3 bg-primary-container hover:bg-inverse-primary text-on-primary rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span>Use in Studio</span>
+</button>
+<button class="p-2 bg-surface-container-high hover:bg-surface-variant text-on-surface rounded-lg transition-colors" title="Quick Preview">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-2 bg-surface-container-high hover:bg-surface-variant text-on-surface rounded-lg transition-colors" title="Download Preset SVG">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</div>
+</article>
+<article class="template-card flex flex-col bg-surface-container rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group" data-tags="vcard business tech identity profile">
+<div class="relative bg-surface-container-low p-space-lg flex items-center justify-center min-h-[260px] overflow-hidden">
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/20 via-transparent to-transparent"></div>
+<div class="relative z-10 w-48 h-48 bg-surface-container-lowest p-3 rounded-xl shadow-lg flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
+<svg class="w-full h-full text-primary" fill="currentColor" viewbox="0 0 100 100">
+<rect fill="currentColor" height="24" rx="1" width="24" x="6" y="6"></rect>
+<rect fill="#060e20" height="18" width="18" x="9" y="9"></rect>
+<rect fill="#c0c1ff" height="12" rx="2" width="12" x="12" y="12"></rect>
+<rect fill="currentColor" height="24" rx="1" width="24" x="70" y="6"></rect>
+<rect fill="#060e20" height="18" width="18" x="73" y="9"></rect>
+<rect fill="#c0c1ff" height="12" rx="2" width="12" x="76" y="12"></rect>
+<rect fill="currentColor" height="24" rx="1" width="24" x="6" y="70"></rect>
+<rect fill="#060e20" height="18" width="18" x="9" y="73"></rect>
+<rect fill="#c0c1ff" height="12" rx="2" width="12" x="12" y="76"></rect>
+<g fill="#c0c1ff">
+<circle cx="38" cy="12" r="2.5"></circle>
+<circle cx="48" cy="12" r="2.5"></circle>
+<circle cx="58" cy="12" r="2.5"></circle>
+<circle cx="38" cy="22" r="2.5"></circle>
+<circle cx="58" cy="22" r="2.5"></circle>
+<circle cx="12" cy="38" r="2.5"></circle>
+<circle cx="12" cy="48" r="2.5"></circle>
+<circle cx="12" cy="58" r="2.5"></circle>
+<circle cx="22" cy="38" r="2.5"></circle>
+<circle cx="22" cy="58" r="2.5"></circle>
+<circle cx="38" cy="38" r="2.5"></circle>
+<circle cx="48" cy="38" r="2.5"></circle>
+<circle cx="58" cy="38" r="2.5"></circle>
+<circle cx="38" cy="58" r="2.5"></circle>
+<circle cx="58" cy="58" r="2.5"></circle>
+<circle cx="78" cy="38" r="2.5"></circle>
+<circle cx="88" cy="38" r="2.5"></circle>
+<circle cx="78" cy="48" r="2.5"></circle>
+<circle cx="88" cy="48" r="2.5"></circle>
+<circle cx="78" cy="58" r="2.5"></circle>
+<circle cx="38" cy="78" r="2.5"></circle>
+<circle cx="48" cy="78" r="2.5"></circle>
+<circle cx="58" cy="78" r="2.5"></circle>
+<circle cx="38" cy="88" r="2.5"></circle>
+<circle cx="58" cy="88" r="2.5"></circle>
+<circle cx="78" cy="78" r="2.5"></circle>
+<circle cx="88" cy="78" r="2.5"></circle>
+<circle cx="78" cy="88" r="2.5"></circle>
+<circle cx="88" cy="88" r="2.5"></circle>
+</g>
+<rect fill="#171f33" height="16" rx="4" width="16" x="42" y="42"></rect>
+<rect fill="#c0c1ff" height="10" rx="2" width="10" x="45" y="45"></rect>
+<path d="M40 46h2m-2 4h2m-2 4h2m16-8h2m-2 4h2m-2 4h2" stroke="#c0c1ff" stroke-width="1.2"></path>
+</svg>
+</div>
+<div class="absolute top-3 left-3 bg-surface-container-highest/80 backdrop-blur-md px-2.5 py-1 rounded-md text-on-surface font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-primary">badge</span>
+<span>Business vCard</span>
+</div>
+<div class="absolute top-3 right-3 bg-secondary-container/30 px-2.5 py-1 rounded-md text-secondary font-code-inline text-code-inline flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            99.8% Scan Score
+          </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Executive Tech vCard 4.0</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              Indigo gradient geometry with embedded microchip emblem. Parses instant native contact card into iOS/Android.
+            </p>
+<div class="grid grid-cols-3 gap-2 bg-surface-container-low p-2.5 rounded-lg mb-space-md text-center">
+<div>
+<span class="block font-label-sm text-label-sm text-outline uppercase tracking-wider">Error Corr</span>
+<span class="font-code-inline text-code-inline text-on-surface font-semibold">Level Q (25%)</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-outline uppercase tracking-wider">Payload</span>
+<span class="font-code-inline text-code-inline text-on-surface font-semibold">MECARD/vCard</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-outline uppercase tracking-wider">Dots Matrix</span>
+<span class="font-code-inline text-code-inline text-on-surface font-semibold">Smooth Dots</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-space-xs">
+<button class="flex-1 py-2 px-3 bg-primary-container hover:bg-inverse-primary text-on-primary rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span>Use in Studio</span>
+</button>
+<button class="p-2 bg-surface-container-high hover:bg-surface-variant text-on-surface rounded-lg transition-colors" title="Quick Preview">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-2 bg-surface-container-high hover:bg-surface-variant text-on-surface rounded-lg transition-colors" title="Download Preset SVG">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</div>
+</article>
+<article class="template-card flex flex-col bg-surface-container rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group" data-tags="wifi network internet access office guest">
+<div class="relative bg-surface-container-low p-space-lg flex items-center justify-center min-h-[260px] overflow-hidden">
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-secondary-container/20 via-transparent to-transparent"></div>
+<div class="relative z-10 w-48 h-48 bg-surface-container-lowest p-3 rounded-xl shadow-lg flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
+<svg class="w-full h-full text-secondary" fill="currentColor" viewbox="0 0 100 100">
+<rect fill="currentColor" height="24" rx="8" width="24" x="6" y="6"></rect>
+<rect fill="#060e20" height="16" rx="6" width="16" x="10" y="10"></rect>
+<circle cx="18" cy="18" fill="currentColor" r="4.5"></circle>
+<rect fill="currentColor" height="24" rx="8" width="24" x="70" y="6"></rect>
+<rect fill="#060e20" height="16" rx="6" width="16" x="74" y="10"></rect>
+<circle cx="82" cy="18" fill="currentColor" r="4.5"></circle>
+<rect fill="currentColor" height="24" rx="8" width="24" x="6" y="70"></rect>
+<rect fill="#060e20" height="16" rx="6" width="16" x="10" y="74"></rect>
+<circle cx="18" cy="82" fill="currentColor" r="4.5"></circle>
+<g fill="currentColor" opacity="0.9">
+<rect height="14" rx="2" width="4" x="36" y="10"></rect>
+<rect height="14" rx="2" width="4" x="44" y="10"></rect>
+<rect height="14" rx="2" width="4" x="52" y="10"></rect>
+<rect height="14" rx="2" width="4" x="60" y="10"></rect>
+<rect height="4" rx="2" width="14" x="10" y="36"></rect>
+<rect height="4" rx="2" width="14" x="10" y="44"></rect>
+<rect height="4" rx="2" width="14" x="10" y="52"></rect>
+<rect height="4" rx="2" width="14" x="10" y="60"></rect>
+<rect height="4" rx="2" width="14" x="76" y="36"></rect>
+<rect height="4" rx="2" width="14" x="76" y="44"></rect>
+<rect height="4" rx="2" width="14" x="76" y="52"></rect>
+<rect height="4" rx="2" width="14" x="76" y="60"></rect>
+<rect height="14" rx="2" width="4" x="36" y="76"></rect>
+<rect height="14" rx="2" width="4" x="44" y="76"></rect>
+<rect height="14" rx="2" width="4" x="52" y="76"></rect>
+<rect height="14" rx="2" width="4" x="60" y="76"></rect>
+</g>
+<circle cx="50" cy="50" fill="#060e20" r="14"></circle>
+<path d="M42 46a11 11 0 0 1 16 0m-13 4a7 7 0 0 1 10 0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path>
+<circle cx="50" cy="54" fill="currentColor" r="1.5"></circle>
+</svg>
+</div>
+<div class="absolute top-3 left-3 bg-surface-container-highest/80 backdrop-blur-md px-2.5 py-1 rounded-md text-on-surface font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-secondary">wifi</span>
+<span>Network</span>
+</div>
+<div class="absolute top-3 right-3 bg-secondary-container/30 px-2.5 py-1 rounded-md text-secondary font-code-inline text-code-inline flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            100% Scan Score
+          </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Zero-Friction Guest Wi-Fi</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              Emerald eye geometry with Wi-Fi beacon emblem. Encodes WPA3 credentials for 1-tap connection without captive portals.
+            </p>
+<div class="grid grid-cols-3 gap-2 bg-surface-container-low p-2.5 rounded-lg mb-space-md text-center">
+<div>
+<span class="block font-label-sm text-label-sm text-outline uppercase tracking-wider">Error Corr</span>
+<span class="font-code-inline text-code-inline text-on-surface font-semibold">Level L (7%)</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-outline uppercase tracking-wider">Payload</span>
+<span class="font-code-inline text-code-inline text-on-surface font-semibold">WIFI:S:..;P:..</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-outline uppercase tracking-wider">Corner Style</span>
+<span class="font-code-inline text-code-inline text-on-surface font-semibold">Soft Radius</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-space-xs">
+<button class="flex-1 py-2 px-3 bg-primary-container hover:bg-inverse-primary text-on-primary rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span>Use in Studio</span>
+</button>
+<button class="p-2 bg-surface-container-high hover:bg-surface-variant text-on-surface rounded-lg transition-colors" title="Quick Preview">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-2 bg-surface-container-high hover:bg-surface-variant text-on-surface rounded-lg transition-colors" title="Download Preset SVG">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</div>
+</article>
+<article class="template-card flex flex-col bg-surface-container rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group" data-tags="product batch serial packaging inventory hardware">
+<div class="relative bg-surface-container-low p-space-lg flex items-center justify-center min-h-[260px] overflow-hidden">
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-surface-variant/40 via-transparent to-transparent"></div>
+<div class="relative z-10 w-48 h-48 bg-surface-container-lowest p-3 rounded-xl shadow-lg flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
+<svg class="w-full h-full text-on-surface" fill="currentColor" viewbox="0 0 100 100">
+<rect fill="currentColor" height="26" width="26" x="4" y="4"></rect>
+<rect fill="#060e20" height="18" width="18" x="8" y="8"></rect>
+<rect fill="currentColor" height="10" width="10" x="12" y="12"></rect>
+<rect fill="currentColor" height="26" width="26" x="70" y="4"></rect>
+<rect fill="#060e20" height="18" width="18" x="74" y="8"></rect>
+<rect fill="currentColor" height="10" width="10" x="78" y="12"></rect>
+<rect fill="currentColor" height="26" width="26" x="4" y="70"></rect>
+<rect fill="#060e20" height="18" width="18" x="8" y="74"></rect>
+<rect fill="currentColor" height="10" width="10" x="12" y="78"></rect>
+<g fill="currentColor">
+<rect height="3" width="3" x="34" y="6"></rect>
+<rect height="3" width="3" x="40" y="6"></rect>
+<rect height="3" width="3" x="46" y="6"></rect>
+<rect height="3" width="3" x="52" y="6"></rect>
+<rect height="3" width="3" x="58" y="6"></rect>
+<rect height="3" width="3" x="64" y="6"></rect>
+<rect height="3" width="3" x="34" y="12"></rect>
+<rect height="3" width="3" x="46" y="12"></rect>
+<rect height="3" width="3" x="58" y="12"></rect>
+<rect height="3" width="3" x="34" y="18"></rect>
+<rect height="3" width="3" x="40" y="18"></rect>
+<rect height="3" width="3" x="52" y="18"></rect>
+<rect height="3" width="3" x="64" y="18"></rect>
+<rect height="3" width="3" x="34" y="24"></rect>
+<rect height="3" width="3" x="58" y="24"></rect>
+<rect height="3" width="3" x="6" y="34"></rect>
+<rect height="3" width="3" x="12" y="34"></rect>
+<rect height="3" width="3" x="18" y="34"></rect>
+<rect height="3" width="3" x="24" y="34"></rect>
+<rect height="3" width="3" x="6" y="40"></rect>
+<rect height="3" width="3" x="18" y="40"></rect>
+<rect height="3" width="3" x="6" y="46"></rect>
+<rect height="3" width="3" x="12" y="46"></rect>
+<rect height="3" width="3" x="24" y="46"></rect>
+<rect height="3" width="3" x="6" y="52"></rect>
+<rect height="3" width="3" x="18" y="52"></rect>
+<rect height="3" width="3" x="6" y="58"></rect>
+<rect height="3" width="3" x="12" y="58"></rect>
+<rect height="3" width="3" x="24" y="58"></rect>
+<rect height="3" width="3" x="6" y="64"></rect>
+<rect height="3" width="3" x="18" y="64"></rect>
+<rect height="3" width="3" x="72" y="34"></rect>
+<rect height="3" width="3" x="84" y="34"></rect>
+<rect height="3" width="3" x="90" y="34"></rect>
+<rect height="3" width="3" x="78" y="40"></rect>
+<rect height="3" width="3" x="84" y="46"></rect>
+<rect height="3" width="3" x="72" y="52"></rect>
+<rect height="3" width="3" x="90" y="52"></rect>
+<rect height="3" width="3" x="78" y="58"></rect>
+<rect height="3" width="3" x="84" y="64"></rect>
+<rect height="3" width="3" x="90" y="64"></rect>
+</g>
+<rect fill="#060e20" height="28" width="28" x="36" y="36"></rect>
+<rect fill="#171f33" height="24" rx="2" width="24" x="38" y="38"></rect>
+<text fill="#4edea3" font-family="monospace" font-size="8" font-weight="bold" text-anchor="middle" x="50" y="53">SN-99</text>
+</svg>
+</div>
+<div class="absolute top-3 left-3 bg-surface-container-highest/80 backdrop-blur-md px-2.5 py-1 rounded-md text-on-surface font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-tertiary">inventory_2</span>
+<span>Packaging</span>
+</div>
+<div class="absolute top-3 right-3 bg-secondary-container/30 px-2.5 py-1 rounded-md text-secondary font-code-inline text-code-inline flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            100% Scan Score
+          </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Product Packaging &amp; Batch Serial</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              High quiet zone with Error Correction Level H (30% recovery). Engineered for cardboard, laser etching, and metal foil printing.
+            </p>
+<div class="grid grid-cols-3 gap-2 bg-surface-container-low p-2.5 rounded-lg mb-space-md text-center">
+<div>
+<span class="block font-label-sm text-label-sm text-outline uppercase tracking-wider">Error Corr</span>
+<span class="font-code-inline text-code-inline text-on-surface font-semibold">Level H (30%)</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-outline uppercase tracking-wider">Payload</span>
+<span class="font-code-inline text-code-inline text-on-surface font-semibold">URN / Serial</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-outline uppercase tracking-wider">Quiet Zone</span>
+<span class="font-code-inline text-code-inline text-on-surface font-semibold">6 Modules</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-space-xs">
+<button class="flex-1 py-2 px-3 bg-primary-container hover:bg-inverse-primary text-on-primary rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span>Use in Studio</span>
+</button>
+<button class="p-2 bg-surface-container-high hover:bg-surface-variant text-on-surface rounded-lg transition-colors" title="Quick Preview">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-2 bg-surface-container-high hover:bg-surface-variant text-on-surface rounded-lg transition-colors" title="Download Preset SVG">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</div>
+</article>
+<article class="template-card flex flex-col bg-surface-container rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group" data-tags="apps download mobile store ios android software">
+<div class="relative bg-surface-container-low p-space-lg flex items-center justify-center min-h-[260px] overflow-hidden">
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/15 via-transparent to-transparent"></div>
+<div class="relative z-10 w-48 h-48 bg-surface-container-lowest p-3 rounded-xl shadow-lg flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
+<svg class="w-full h-full text-on-surface" fill="currentColor" viewbox="0 0 100 100">
+<rect fill="#c0c1ff" height="24" rx="6" width="24" x="6" y="6"></rect>
+<rect fill="#060e20" height="16" rx="4" width="16" x="10" y="10"></rect>
+<rect fill="#c0c1ff" height="8" rx="2" width="8" x="14" y="14"></rect>
+<rect fill="#c0c1ff" height="24" rx="6" width="24" x="70" y="6"></rect>
+<rect fill="#060e20" height="16" rx="4" width="16" x="74" y="10"></rect>
+<rect fill="#c0c1ff" height="8" rx="2" width="8" x="78" y="14"></rect>
+<rect fill="#c0c1ff" height="24" rx="6" width="24" x="6" y="70"></rect>
+<rect fill="#060e20" height="16" rx="4" width="16" x="10" y="74"></rect>
+<rect fill="#c0c1ff" height="8" rx="2" width="8" x="14" y="78"></rect>
+<g fill="#c0c1ff" opacity="0.85">
+<rect height="4" rx="2" width="8" x="36" y="8"></rect>
+<rect height="4" rx="2" width="8" x="48" y="8"></rect>
+<rect height="4" rx="2" width="8" x="36" y="16"></rect>
+<rect height="4" rx="2" width="8" x="48" y="16"></rect>
+<rect height="4" rx="2" width="8" x="36" y="24"></rect>
+<rect height="4" rx="2" width="8" x="48" y="24"></rect>
+<rect height="8" rx="2" width="4" x="8" y="36"></rect>
+<rect height="8" rx="2" width="4" x="16" y="36"></rect>
+<rect height="8" rx="2" width="4" x="24" y="36"></rect>
+<rect height="8" rx="2" width="4" x="8" y="48"></rect>
+<rect height="8" rx="2" width="4" x="16" y="48"></rect>
+<rect height="8" rx="2" width="4" x="24" y="48"></rect>
+<rect height="8" rx="2" width="4" x="8" y="60"></rect>
+<rect height="8" rx="2" width="4" x="16" y="60"></rect>
+<rect height="4" rx="2" width="8" x="72" y="36"></rect>
+<rect height="4" rx="2" width="8" x="84" y="36"></rect>
+<rect height="4" rx="2" width="8" x="72" y="48"></rect>
+<rect height="4" rx="2" width="8" x="84" y="48"></rect>
+<rect height="4" rx="2" width="8" x="72" y="60"></rect>
+<rect height="4" rx="2" width="8" x="84" y="60"></rect>
+<rect height="8" rx="2" width="4" x="36" y="72"></rect>
+<rect height="8" rx="2" width="4" x="44" y="72"></rect>
+<rect height="8" rx="2" width="4" x="52" y="72"></rect>
+<rect height="8" rx="2" width="4" x="60" y="72"></rect>
+</g>
+<rect fill="#060e20" height="20" rx="3" width="16" x="42" y="40"></rect>
+<rect fill="#8083ff" height="16" rx="2" width="12" x="44" y="42"></rect>
+<circle cx="50" cy="55" fill="#060e20" r="1.2"></circle>
+</svg>
+</div>
+<div class="absolute top-3 left-3 bg-surface-container-highest/80 backdrop-blur-md px-2.5 py-1 rounded-md text-on-surface font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-primary">install_mobile</span>
+<span>App Install</span>
+</div>
+<div class="absolute top-3 right-3 bg-secondary-container/30 px-2.5 py-1 rounded-md text-secondary font-code-inline text-code-inline flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            99.5% Scan Score
+          </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Dual App Store Landing Target</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              Adaptive client-side JavaScript landing link that routes iOS and Android users to their respective marketplaces with no proxy.
+            </p>
+<div class="grid grid-cols-3 gap-2 bg-surface-container-low p-2.5 rounded-lg mb-space-md text-center">
+<div>
+<span class="block font-label-sm text-label-sm text-outline uppercase tracking-wider">Error Corr</span>
+<span class="font-code-inline text-code-inline text-on-surface font-semibold">Level Q (25%)</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-outline uppercase tracking-wider">Payload</span>
+<span class="font-code-inline text-code-inline text-on-surface font-semibold">Universal URL</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-outline uppercase tracking-wider">Visual Badge</span>
+<span class="font-code-inline text-code-inline text-on-surface font-semibold">Phone Inset</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-space-xs">
+<button class="flex-1 py-2 px-3 bg-primary-container hover:bg-inverse-primary text-on-primary rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span>Use in Studio</span>
+</button>
+<button class="p-2 bg-surface-container-high hover:bg-surface-variant text-on-surface rounded-lg transition-colors" title="Quick Preview">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-2 bg-surface-container-high hover:bg-surface-variant text-on-surface rounded-lg transition-colors" title="Download Preset SVG">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</div>
+</article>
+<article class="template-card flex flex-col bg-surface-container rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group" data-tags="crypto payment btc eth cold wallet web3 finance">
+<div class="relative bg-surface-container-low p-space-lg flex items-center justify-center min-h-[260px] overflow-hidden">
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-secondary/15 via-transparent to-transparent"></div>
+<div class="relative z-10 w-48 h-48 bg-surface-container-lowest p-3 rounded-xl shadow-lg flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
+<svg class="w-full h-full text-secondary" fill="currentColor" viewbox="0 0 100 100">
+<rect fill="currentColor" height="24" width="24" x="6" y="6"></rect>
+<rect fill="#060e20" height="18" width="18" x="9" y="9"></rect>
+<rect fill="currentColor" height="12" width="12" x="12" y="12"></rect>
+<rect fill="currentColor" height="24" width="24" x="70" y="6"></rect>
+<rect fill="#060e20" height="18" width="18" x="73" y="9"></rect>
+<rect fill="currentColor" height="12" width="12" x="76" y="12"></rect>
+<rect fill="currentColor" height="24" width="24" x="6" y="70"></rect>
+<rect fill="#060e20" height="18" width="18" x="9" y="73"></rect>
+<rect fill="currentColor" height="12" width="12" x="12" y="76"></rect>
+<g fill="currentColor">
+<rect height="3" width="3" x="36" y="8"></rect>
+<rect height="3" width="3" x="42" y="8"></rect>
+<rect height="3" width="3" x="48" y="8"></rect>
+<rect height="3" width="3" x="54" y="8"></rect>
+<rect height="3" width="3" x="60" y="8"></rect>
+<rect height="3" width="3" x="39" y="14"></rect>
+<rect height="3" width="3" x="51" y="14"></rect>
+<rect height="3" width="3" x="63" y="14"></rect>
+<rect height="3" width="3" x="36" y="20"></rect>
+<rect height="3" width="3" x="45" y="20"></rect>
+<rect height="3" width="3" x="57" y="20"></rect>
+<rect height="3" width="3" x="8" y="36"></rect>
+<rect height="3" width="3" x="14" y="36"></rect>
+<rect height="3" width="3" x="20" y="36"></rect>
+<rect height="3" width="3" x="26" y="36"></rect>
+<rect height="3" width="3" x="11" y="42"></rect>
+<rect height="3" width="3" x="23" y="42"></rect>
+<rect height="3" width="3" x="8" y="48"></rect>
+<rect height="3" width="3" x="17" y="48"></rect>
+<rect height="3" width="3" x="26" y="48"></rect>
+<rect height="3" width="3" x="11" y="54"></rect>
+<rect height="3" width="3" x="20" y="54"></rect>
+<rect height="3" width="3" x="8" y="60"></rect>
+<rect height="3" width="3" x="23" y="60"></rect>
+<rect height="3" width="3" x="71" y="36"></rect>
+<rect height="3" width="3" x="80" y="36"></rect>
+<rect height="3" width="3" x="89" y="36"></rect>
+<rect height="3" width="3" x="74" y="42"></rect>
+<rect height="3" width="3" x="83" y="42"></rect>
+<rect height="3" width="3" x="77" y="48"></rect>
+<rect height="3" width="3" x="86" y="48"></rect>
+<rect height="3" width="3" x="71" y="54"></rect>
+<rect height="3" width="3" x="89" y="54"></rect>
+<rect height="3" width="3" x="36" y="74"></rect>
+<rect height="3" width="3" x="45" y="74"></rect>
+<rect height="3" width="3" x="54" y="74"></rect>
+<rect height="3" width="3" x="63" y="74"></rect>
+<rect height="3" width="3" x="42" y="80"></rect>
+<rect height="3" width="3" x="51" y="80"></rect>
+<rect height="3" width="3" x="60" y="80"></rect>
+<rect height="3" width="3" x="36" y="86"></rect>
+<rect height="3" width="3" x="48" y="86"></rect>
+<rect height="3" width="3" x="57" y="86"></rect>
+</g>
+<circle cx="50" cy="50" fill="#060e20" r="13"></circle>
+<path d="M50 41v18M46 45h6.5a2.5 2.5 0 0 1 0 5H46h7.5a2.5 2.5 0 0 1 0 5H46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path>
+</svg>
+</div>
+<div class="absolute top-3 left-3 bg-surface-container-highest/80 backdrop-blur-md px-2.5 py-1 rounded-md text-on-surface font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-secondary">currency_bitcoin</span>
+<span>Crypto Receive</span>
+</div>
+<div class="absolute top-3 right-3 bg-secondary-container/30 px-2.5 py-1 rounded-md text-secondary font-code-inline text-code-inline flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            100% Scan Score
+          </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Crypto Wallet Cold Receive</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              Ultra-dense matrix with Bitcoin/Ethereum badge. High fault tolerance prevents transaction destination corruption.
+            </p>
+<div class="grid grid-cols-3 gap-2 bg-surface-container-low p-2.5 rounded-lg mb-space-md text-center">
+<div>
+<span class="block font-label-sm text-label-sm text-outline uppercase tracking-wider">Error Corr</span>
+<span class="font-code-inline text-code-inline text-on-surface font-semibold">Level H (30%)</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-outline uppercase tracking-wider">Payload</span>
+<span class="font-code-inline text-code-inline text-on-surface font-semibold">BIP-21 URI</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-outline uppercase tracking-wider">Mask Pattern</span>
+<span class="font-code-inline text-code-inline text-on-surface font-semibold">Pattern 010</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-space-xs">
+<button class="flex-1 py-2 px-3 bg-primary-container hover:bg-inverse-primary text-on-primary rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span>Use in Studio</span>
+</button>
+<button class="p-2 bg-surface-container-high hover:bg-surface-variant text-on-surface rounded-lg transition-colors" title="Quick Preview">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-2 bg-surface-container-high hover:bg-surface-variant text-on-surface rounded-lg transition-colors" title="Download Preset SVG">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+</section>
+<section class="max-w-7xl mx-auto px-6 lg:px-12 pb-space-2xl w-full">
+<div class="bg-surface-container p-space-lg lg:p-space-xl rounded-2xl shadow-xl flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">design_services</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Want custom tailored brand geometry?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Switch to the Generator Studio or load any preset with 1-click to tweak error correction, SVG markers, or silent zones.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 w-full md:w-auto">
+<a class="w-full md:w-auto px-5 py-2.5 bg-primary-container hover:bg-inverse-primary text-on-primary font-label-md text-label-md rounded-lg flex items-center justify-center gap-2 transition-colors shadow-sm" data-path="generator" href="#">
+<span>Open Blank Generator</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<script>
+    (function() {
+      const searchInput = document.getElementById('template-search-input');
+      const cards = document.querySelectorAll('.template-card');
+      const categoryButtons = document.querySelectorAll('.category-btn');
+
+      let currentCategory = 'all';
+      let searchQuery = '';
+
+      function filterCards() {
+        cards.forEach(card => {
+          const tags = card.getAttribute('data-tags') || '';
+          const title = card.querySelector('h3')?.textContent.toLowerCase() || '';
+          const desc = card.querySelector('p')?.textContent.toLowerCase() || '';
+          const content = tags + ' ' + title + ' ' + desc;
+
+          const matchesCategory = (currentCategory === 'all') || tags.includes(currentCategory);
+          const matchesSearch = !searchQuery || content.includes(searchQuery.toLowerCase());
+
+          if (matchesCategory && matchesSearch) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      }
+
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          searchQuery = e.target.value.trim();
+          filterCards();
+        });
+      }
+
+      categoryButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          categoryButtons.forEach(b => {
+            b.classList.remove('bg-primary-container', 'text-on-primary');
+            b.classList.add('bg-surface-container', 'text-on-surface-variant');
+          });
+          btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+          btn.classList.add('bg-primary-container', 'text-on-primary');
+
+          currentCategory = btn.getAttribute('data-category') || 'all';
+          filterCards();
+        });
+      });
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest"><div class="w-full bg-surface-container-low py-space-xl"><div class="max-w-7xl mx-auto px-6 lg:px-12"><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg"><div class="p-space-lg rounded-xl bg-surface-container"><div class="w-10 h-10 rounded-lg bg-secondary-container/20 text-secondary flex items-center justify-center mb-space-sm"><span class="material-symbols-outlined text-[24px]">lock</span></div><h4 class="font-headline-md text-headline-md text-on-surface mb-1">100% Static &amp; Client-Side</h4><p class="font-body-md text-body-md text-on-surface-variant">Data stays solely in your browser memory. No backend transmissions or logged telemetry.</p></div><div class="p-space-lg rounded-xl bg-surface-container"><div class="w-10 h-10 rounded-lg bg-secondary-container/20 text-secondary flex items-center justify-center mb-space-sm"><span class="material-symbols-outlined text-[24px]">all_inclusive</span></div><h4 class="font-headline-md text-headline-md text-on-surface mb-1">Never Expires</h4><p class="font-body-md text-body-md text-on-surface-variant">Zero external redirects or dependency chains. Encoded payloads work permanently offline.</p></div><div class="p-space-lg rounded-xl bg-surface-container"><div class="w-10 h-10 rounded-lg bg-secondary-container/20 text-secondary flex items-center justify-center mb-space-sm"><span class="material-symbols-outlined text-[24px]">visibility_off</span></div><h4 class="font-headline-md text-headline-md text-on-surface mb-1">No Cloud Database</h4><p class="font-body-md text-body-md text-on-surface-variant">Pure cryptographic standards and raster/vector compilation with no intermediate tracking proxy.</p></div><div class="p-space-lg rounded-xl bg-surface-container"><div class="w-10 h-10 rounded-lg bg-secondary-container/20 text-secondary flex items-center justify-center mb-space-sm"><span class="material-symbols-outlined text-[24px]">qr_code_scanner</span></div><h4 class="font-headline-md text-headline-md text-on-surface mb-1">Unlimited Scans Forever</h4><p class="font-body-md text-body-md text-on-surface-variant">Direct camera decoding ensures infinite read cycles without subscription limits or throttling.</p></div></div></div></div><div class="max-w-7xl mx-auto px-6 lg:px-12 py-space-xl flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img alt="QiCraft Logo" class="h-6 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XeNFitI05oe7M0o1Xf9CLNnTedxGH5_8ASA8FA1otk9dTlsOKvmsNDpPCnzuYqz7gIYprIc1xzjaTct2htNoBEbG-iMlrMCOWHxeOu20fgUiPdh52Lbx4BxRej8tS2hBBC16RRISk3PHs8rtLwx_SSY1C-LneEbJ__rGhaOq5iH3NNPxt-Tat9Xxv1kyg1S-XlH2QO2pCPBnSqIWGjkC6_gQ7b5LbY3p_-zE6SwiybeCfDXjBUIC1ZjY2G"/><span class="font-headline-md text-headline-md text-on-surface">QiCraft</span><span class="font-body-md text-body-md text-on-surface-variant ml-2">© 2024 QiCraft by Qinur. Built for uncompromising privacy.</span></div><div class="flex items-center gap-space-lg"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="generator" href="#">Generator</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="templates" href="#">Templates</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="how-it-works" href="#">How it Works</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#">About Static QR</a></div></div></footer></body></html>

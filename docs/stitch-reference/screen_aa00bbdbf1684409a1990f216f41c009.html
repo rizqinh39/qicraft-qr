@@ -1,0 +1,721 @@
+<!DOCTYPE html><html class="dark" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container":"#171f33","surface-container-high":"#222a3d","secondary-container":"#00a572","tertiary-fixed-dim":"#bdc2ff","tertiary-fixed":"#e0e0ff","on-secondary-container":"#00311f","surface-variant":"#2d3449","background":"#0b1326","secondary-fixed-dim":"#4edea3","on-primary-container":"#0d0096","inverse-primary":"#494bd6","tertiary-container":"#7c87f3","secondary":"#4edea3","error-container":"#93000a","error":"#ffb4ab","on-surface":"#dae2fd","surface-bright":"#31394d","on-surface-variant":"#c7c4d7","primary-fixed":"#e1e0ff","on-primary-fixed":"#07006c","secondary-fixed":"#6ffbbe","inverse-surface":"#dae2fd","surface-container-lowest":"#060e20","on-secondary-fixed-variant":"#005236","primary-container":"#8083ff","on-secondary-fixed":"#002113","on-tertiary-fixed":"#000767","outline-variant":"#464554","surface-container-highest":"#2d3449","on-tertiary-fixed-variant":"#2f3aa3","surface":"#0b1326","surface-container-low":"#131b2e","on-tertiary-container":"#081486","on-secondary":"#003824","on-error":"#690005","inverse-on-surface":"#283044","on-tertiary":"#131e8c","on-error-container":"#ffdad6","primary":"#c0c1ff","tertiary":"#bdc2ff","on-primary-fixed-variant":"#2f2ebe","primary-fixed-dim":"#c0c1ff","surface-tint":"#c0c1ff","outline":"#908fa0","on-background":"#dae2fd","surface-dim":"#0b1326","on-primary":"#1000a9"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-md":"1rem","space-2xl":"3rem","space-sm":"0.5rem","gutter-mobile":"1rem","space-xl":"2rem","space-lg":"1.5rem","margin":"2rem","margin-mobile":"1rem","space-xs":"0.25rem","gutter":"1.5rem"},"fontFamily":{"headline-md":["Inter"],"headline-lg":["Inter"],"code-inline":["Inter"],"label-sm":["Inter"],"label-md":["Inter"],"headline-xl-mobile":["Inter"],"body-md":["Inter"],"headline-xl":["Inter"],"body-lg":["Inter"]},"fontSize":{"headline-md":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"code-inline":["12px",{"lineHeight":"16px","fontWeight":"500"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"label-md":["13px",{"lineHeight":"18px","fontWeight":"500"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm group" data-path="generator" href="#"><img alt="QiCraft Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XeNFitI05oe7M0o1Xf9CLNnTedxGH5_8ASA8FA1otk9dTlsOKvmsNDpPCnzuYqz7gIYprIc1xzjaTct2htNoBEbG-iMlrMCOWHxeOu20fgUiPdh52Lbx4BxRej8tS2hBBC16RRISk3PHs8rtLwx_SSY1C-LneEbJ__rGhaOq5iH3NNPxt-Tat9Xxv1kyg1S-XlH2QO2pCPBnSqIWGjkC6_gQ7b5LbY3p_-zE6SwiybeCfDXjBUIC1ZjY2G"><span class="font-headline-md text-headline-md text-on-surface tracking-tight">QiCraft</span></a><span class="hidden sm:inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm border border-secondary/20">Static &amp; Private</span></div><nav class="hidden md:flex items-center gap-space-xs" data-active-classes="bg-surface-container text-on-surface font-semibold rounded-lg"><a aria-current="page" class="px-3 py-1.5 transition-colors bg-surface-container text-on-surface font-semibold rounded-lg" data-path="generator" href="#">Generator</a><a class="px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="templates" href="#">Templates</a><a class="px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="how-it-works" href="#">How it Works</a><a class="px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="about-static-qr" href="#">About Static QR</a></nav><div class="flex items-center gap-space-sm"><button aria-label="Toggle dark and light theme" class="p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">dark_mode</span></button><a class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" href="https://github.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">code</span><span class="font-label-md text-label-md">GitHub</span><span class="ml-1 px-1.5 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-code-inline text-code-inline">★ 2.4k</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow -->
+<div class="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-8">
+<div class="absolute top-12 left-1/4 -z-10 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-40 right-10 -z-10 w-80 h-80 bg-secondary/5 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Workspace Header / Micro Subnav -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-6 gap-4">
+<div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mr-1.5 animate-pulse"></span>
+            Static Compiler v4.2
+          </span>
+<span class="font-code-inline text-code-inline text-on-surface-variant">Client-side WebAssembly Engine</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface mt-1 tracking-tight">Static QR Code Generator Studio</h1>
+</div>
+<div class="flex items-center gap-2 self-start sm:self-auto">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all font-label-md text-label-md shadow-sm" id="reset-defaults-btn" type="button">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+          Reset Defaults
+        </button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-high text-secondary font-label-md text-label-md shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+          Zero Telemetry
+        </button>
+</div>
+</div>
+<!-- Main Asymmetric Workspace Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- LEFT COLUMN: CONTROLS & INPUTS (7 Columns) -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<!-- 1. Data Type Selector Tabs -->
+<div class="bg-surface-container-low rounded-xl p-3 shadow-md">
+<div class="flex items-center justify-between px-2 pb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Payload Format</span>
+<span class="font-code-inline text-code-inline text-secondary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Direct Hardware Decodable
+            </span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-5 gap-1.5" id="data-type-selector">
+<!-- URL Tab -->
+<button class="type-tab-btn flex flex-col items-center justify-center py-2.5 px-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md transition-all shadow-sm" data-type="url" type="button">
+<span class="material-symbols-outlined text-[20px] mb-1">language</span>
+<span class="">Website URL</span>
+</button>
+<!-- Wi-Fi Tab -->
+<button class="type-tab-btn flex flex-col items-center justify-center py-2.5 px-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all" data-type="wifi" type="button">
+<span class="material-symbols-outlined text-[20px] mb-1">wifi</span>
+<span class="">Wi-Fi Access</span>
+</button>
+<!-- vCard Tab -->
+<button class="type-tab-btn flex flex-col items-center justify-center py-2.5 px-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all" data-type="vcard" type="button">
+<span class="material-symbols-outlined text-[20px] mb-1">badge</span>
+<span class="">vCard 4.0</span>
+</button>
+<!-- Plain Text Tab -->
+<button class="type-tab-btn flex flex-col items-center justify-center py-2.5 px-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all" data-type="text" type="button">
+<span class="material-symbols-outlined text-[20px] mb-1">notes</span>
+<span class="">Plain Text</span>
+</button>
+<!-- Message Tab -->
+<button class="type-tab-btn flex flex-col items-center justify-center py-2.5 px-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all" data-type="msg" type="button">
+<span class="material-symbols-outlined text-[20px] mb-1">chat</span>
+<span class="">SMS / Chat</span>
+</button>
+</div>
+</div>
+<!-- 2. Dynamic Contextual Input Form -->
+<div class="bg-surface-container rounded-xl p-6 shadow-md flex flex-col gap-5">
+<!-- URL Form Panel (Active) -->
+<div class="flex flex-col gap-4" id="panel-url">
+<div class="flex items-center justify-between">
+<label class="font-headline-md text-headline-md text-on-surface flex items-center gap-2" for="url-input">
+<span class="material-symbols-outlined text-[20px] text-primary">link</span>
+                Destination Endpoint
+              </label>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container/20 text-secondary font-label-sm text-label-sm" id="url-status">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                Valid Web URL
+              </span>
+</div>
+<div class="flex rounded-lg overflow-hidden bg-surface-container-lowest shadow-inner focus-within:ring-2 focus-within:ring-primary/60 transition-all">
+<div class="relative flex items-center bg-surface-container-high px-3 py-2.5 cursor-pointer">
+<select class="bg-transparent text-primary font-code-inline text-code-inline focus:outline-none cursor-pointer pr-4 appearance-none" id="protocol-select">
+<option value="https://">https://</option>
+<option value="http://">http://</option>
+</select>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant pointer-events-none absolute right-1">expand_more</span>
+</div>
+<input class="w-full bg-transparent px-3 py-2.5 font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none" id="url-input" placeholder="domain.com/campaign" type="text" value="yourbrand.com/launch">
+<button aria-label="Clear input" class="px-3 text-on-surface-variant hover:text-on-surface flex items-center justify-center" id="clear-url-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Contextual UTM campaign toggle -->
+<div class="pt-2 flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="w-4 h-4 rounded accent-primary bg-surface-container-lowest cursor-pointer" id="utm-toggle" type="checkbox">
+<span class="font-label-md text-label-md text-on-surface">Embed UTM Campaign Metadata</span>
+</label>
+<span class="font-code-inline text-code-inline text-on-surface-variant">Static query strings</span>
+</div>
+<!-- Collapsible UTM Parameters -->
+<div class="hidden grid grid-cols-1 sm:grid-cols-3 gap-2.5 p-3 rounded-lg bg-surface-container-low" id="utm-inputs-row">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mb-1">utm_source</span>
+<input class="w-full bg-surface-container-lowest px-2.5 py-1.5 rounded text-on-surface font-code-inline text-code-inline focus:outline-none focus:ring-1 focus:ring-primary" type="text" value="qr_standee">
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mb-1">utm_medium</span>
+<input class="w-full bg-surface-container-lowest px-2.5 py-1.5 rounded text-on-surface font-code-inline text-code-inline focus:outline-none focus:ring-1 focus:ring-primary" type="text" value="print_event">
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mb-1">utm_campaign</span>
+<input class="w-full bg-surface-container-lowest px-2.5 py-1.5 rounded text-on-surface font-code-inline text-code-inline focus:outline-none focus:ring-1 focus:ring-primary" type="text" value="summit_2025">
+</div>
+</div>
+</div>
+</div>
+<!-- Wi-Fi Form Panel (Secondary Dynamic View) -->
+<div class="hidden flex flex-col gap-4" id="panel-wifi">
+<div class="flex items-center justify-between">
+<label class="font-headline-md text-headline-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-secondary">wifi</span>
+                Direct Guest Wi-Fi Connect
+              </label>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container/20 text-secondary font-label-sm text-label-sm">
+                WIFI: Protocol Ready
+              </span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mb-1">SSID Network Name</span>
+<input class="w-full bg-surface-container-lowest px-3 py-2 rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary/60" type="text" value="Guest-UltraFast-5G">
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Password</span>
+<input class="w-full bg-surface-container-lowest px-3 py-2 rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary/60" type="password" value="SuperSafeKey2025">
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Security Protocol:</span>
+<div class="flex items-center gap-1 bg-surface-container-lowest p-1 rounded-lg">
+<button class="px-2 py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm" type="button">WPA/WPA2</button>
+<button class="px-2 py-1 rounded text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface" type="button">WEP</button>
+<button class="px-2 py-1 rounded text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface" type="button">Open</button>
+</div>
+</div>
+<label class="flex items-center gap-1.5 cursor-pointer">
+<input class="w-4 h-4 rounded accent-primary bg-surface-container-lowest" type="checkbox">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Hidden SSID</span>
+</label>
+</div>
+</div>
+</div>
+<!-- 3. Accordion Customization Sections -->
+<div class="flex flex-col gap-3">
+<!-- Accordion 1: Colors & Background (Expanded by default) -->
+<div class="accordion-item bg-surface-container rounded-xl overflow-hidden shadow-md">
+<button class="accordion-trigger w-full px-6 py-4 flex items-center justify-between text-left hover:bg-surface-container-high/40 transition-colors" type="button">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-primary-container/20 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">palette</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Colors &amp; Contrast Engine</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Control foreground, background, and gradient module tones</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/20 text-secondary font-label-sm text-label-sm">High Contrast</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant transition-transform transform rotate-180 accordion-icon">expand_more</span>
+</div>
+</button>
+<div class="accordion-body px-6 pb-6 pt-2 flex flex-col gap-5">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Foreground Color -->
+<div class="p-3.5 rounded-lg bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Foreground (Modules)</span>
+<span class="font-code-inline text-code-inline text-on-surface-variant">Dark tones ensure scans</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg shadow-inner flex-shrink-0 cursor-pointer" id="fg-swatch-preview" style="background-color: #0b1326;"></div>
+<div class="relative w-full">
+<span class="absolute left-3 top-2.5 font-code-inline text-code-inline text-on-surface-variant">#</span>
+<input class="w-full bg-surface-container-lowest pl-7 pr-3 py-2 rounded-lg font-code-inline text-code-inline text-on-surface focus:outline-none focus:ring-1 focus:ring-primary uppercase" id="fg-hex-input" type="text" value="0B1326">
+</div>
+</div>
+</div>
+<!-- Background Color -->
+<div class="p-3.5 rounded-lg bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Background (Canvas)</span>
+<button class="font-label-sm text-label-sm text-primary hover:underline" id="toggle-transparent-bg" type="button">Transparent</button>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg shadow-inner flex-shrink-0 bg-white" id="bg-swatch-preview"></div>
+<div class="relative w-full">
+<span class="absolute left-3 top-2.5 font-code-inline text-code-inline text-on-surface-variant">#</span>
+<input class="w-full bg-surface-container-lowest pl-7 pr-3 py-2 rounded-lg font-code-inline text-code-inline text-on-surface focus:outline-none focus:ring-1 focus:ring-primary uppercase" id="bg-hex-input" type="text" value="FFFFFF">
+</div>
+</div>
+</div>
+</div>
+<!-- Curated Safe Swatches -->
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Curated High-Contrast Presets</span>
+<div class="flex flex-wrap items-center gap-2.5" id="color-palette-presets">
+<button class="color-preset-btn w-8 h-8 rounded-lg shadow-sm flex items-center justify-center transition-transform hover:scale-110 active:scale-95 ring-2 ring-primary" data-color="#0B1326" style="background-color: #0b1326;" type="button">
+<span class="material-symbols-outlined text-[14px] text-white">check</span>
+</button>
+<button class="color-preset-btn w-8 h-8 rounded-lg shadow-sm flex items-center justify-center transition-transform hover:scale-110 active:scale-95" data-color="#494bd6" style="background-color: #494bd6;" type="button"></button>
+<button class="color-preset-btn w-8 h-8 rounded-lg shadow-sm flex items-center justify-center transition-transform hover:scale-110 active:scale-95" data-color="#00a572" style="background-color: #00a572;" type="button"></button>
+<button class="color-preset-btn w-8 h-8 rounded-lg shadow-sm flex items-center justify-center transition-transform hover:scale-110 active:scale-95" data-color="#93000a" style="background-color: #93000a;" type="button"></button>
+<button class="color-preset-btn w-8 h-8 rounded-lg shadow-sm flex items-center justify-center transition-transform hover:scale-110 active:scale-95" data-color="#2d3449" style="background-color: #2d3449;" type="button"></button>
+<button class="color-preset-btn w-8 h-8 rounded-lg shadow-sm flex items-center justify-center transition-transform hover:scale-110 active:scale-95" data-color="#171f33" style="background-color: #171f33;" type="button"></button>
+</div>
+</div>
+<!-- Gradient Fill Toggle -->
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-2">
+<input class="w-4 h-4 rounded accent-primary bg-surface-container-lowest cursor-pointer" id="gradient-toggle" type="checkbox">
+<label class="font-body-md text-body-md text-on-surface cursor-pointer" for="gradient-toggle">Enable Dual-Tone Linear Gradient</label>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">SVGs retain pure paths</span>
+</div>
+</div>
+</div>
+<!-- Accordion 2: Shapes & Geometry -->
+<div class="accordion-item bg-surface-container rounded-xl overflow-hidden shadow-md">
+<button class="accordion-trigger w-full px-6 py-4 flex items-center justify-between text-left hover:bg-surface-container-high/40 transition-colors" type="button">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-secondary-container/20 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">shapes</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Module Shapes &amp; Eye Geometry</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Body dot styles, corner frame curvature, and center pupil shape</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant transition-transform accordion-icon">expand_more</span>
+</button>
+<div class="accordion-body hidden px-6 pb-6 pt-2 flex flex-col gap-5">
+<!-- Body Dot Modules -->
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Body Data Pattern</span>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+<button class="shape-btn p-3 rounded-lg bg-surface-container-high ring-2 ring-primary text-on-surface flex flex-col items-center gap-1.5 transition-all" type="button">
+<span class="material-symbols-outlined text-[24px]">square</span>
+<span class="font-label-sm text-label-sm">Standard Crisp</span>
+</button>
+<button class="shape-btn p-3 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface flex flex-col items-center gap-1.5 transition-all" type="button">
+<span class="material-symbols-outlined text-[24px]">radio_button_checked</span>
+<span class="font-label-sm text-label-sm">Round Dots</span>
+</button>
+<button class="shape-btn p-3 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface flex flex-col items-center gap-1.5 transition-all" type="button">
+<span class="material-symbols-outlined text-[24px]">crop_square</span>
+<span class="font-label-sm text-label-sm">Soft Smooth</span>
+</button>
+<button class="shape-btn p-3 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface flex flex-col items-center gap-1.5 transition-all" type="button">
+<span class="material-symbols-outlined text-[24px]">diamond</span>
+<span class="font-label-sm text-label-sm">Diamond</span>
+</button>
+</div>
+</div>
+<!-- Corner Eye Frame & Center -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1">
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Corner Frame (Outer)</span>
+<div class="grid grid-cols-3 gap-2">
+<button class="p-2 rounded bg-surface-container-high ring-1 ring-primary text-center font-label-sm text-label-sm text-on-surface" type="button">Square</button>
+<button class="p-2 rounded bg-surface-container-low text-center font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-high" type="button">Rounded</button>
+<button class="p-2 rounded bg-surface-container-low text-center font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-high" type="button">Leaf</button>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Pupil Eyeball (Inner)</span>
+<div class="grid grid-cols-3 gap-2">
+<button class="p-2 rounded bg-surface-container-high ring-1 ring-primary text-center font-label-sm text-label-sm text-on-surface" type="button">Square</button>
+<button class="p-2 rounded bg-surface-container-low text-center font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-high" type="button">Circle</button>
+<button class="p-2 rounded bg-surface-container-low text-center font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-high" type="button">Shield</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Accordion 3: Logo & Branding -->
+<div class="accordion-item bg-surface-container rounded-xl overflow-hidden shadow-md">
+<button class="accordion-trigger w-full px-6 py-4 flex items-center justify-between text-left hover:bg-surface-container-high/40 transition-colors" type="button">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-tertiary-container/20 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Logo &amp; Brand Emblem</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Vector badge placement with automatic contrast halo shield</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant transition-transform accordion-icon">expand_more</span>
+</button>
+<div class="accordion-body hidden px-6 pb-6 pt-2 flex flex-col gap-5">
+<!-- Upload Drag Zone -->
+<div class="p-6 rounded-xl bg-surface-container-low flex flex-col items-center justify-center text-center cursor-pointer hover:bg-surface-container-high/50 transition-all">
+<span class="material-symbols-outlined text-[32px] text-primary mb-2">cloud_upload</span>
+<p class="font-label-md text-label-md text-on-surface">Drag &amp; drop brand logo here, or <span class="text-primary underline">browse file</span></p>
+<p class="font-code-inline text-code-inline text-on-surface-variant mt-1">SVG, PNG, WebP supported. Max 2MB.</p>
+</div>
+<!-- Quick Preset Badges -->
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Default Quick Badges</span>
+<div class="flex items-center gap-3">
+<button class="p-2.5 rounded-lg bg-surface-container-high text-primary flex items-center gap-2 font-label-md text-label-md ring-1 ring-primary/40" type="button"><span class="material-symbols-outlined text-[18px]">qr_code_2</span> QiCraft Logo</button>
+<button class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface flex items-center gap-2 font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">star</span>
+                    Star Mark
+                  </button>
+<button class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface flex items-center gap-2 font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+                    Lightning
+                  </button>
+</div>
+</div>
+<!-- Logo Scale & Backdrop Checkbox -->
+<div class="flex items-center justify-between pt-1">
+<label class="flex items-center gap-2 cursor-pointer">
+<input checked="" class="w-4 h-4 rounded accent-primary bg-surface-container-lowest" type="checkbox">
+<span class="font-body-md text-body-md text-on-surface">Protective White Background Halo</span>
+</label>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Scale: 22%</span>
+<input class="w-24 accent-primary cursor-pointer" max="30" min="12" type="range" value="22">
+</div>
+</div>
+</div>
+</div>
+<!-- Accordion 4: Technical & Error Correction -->
+<div class="accordion-item bg-surface-container rounded-xl overflow-hidden shadow-md">
+<button class="accordion-trigger w-full px-6 py-4 flex items-center justify-between text-left hover:bg-surface-container-high/40 transition-colors" type="button">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Reed-Solomon &amp; Quiet Zone</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Fault tolerance parity, quiet margin padding, and version size</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant transition-transform accordion-icon">expand_more</span>
+</button>
+<div class="accordion-body hidden px-6 pb-6 pt-2 flex flex-col gap-5">
+<!-- Error Correction Level -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Error Correction Level (ECC)</span>
+<span class="font-code-inline text-code-inline text-primary">Level M (Recommended)</span>
+</div>
+<div class="grid grid-cols-4 gap-2">
+<button class="p-2.5 rounded-lg bg-surface-container-low text-center hover:bg-surface-container-high" type="button">
+<span class="block font-headline-md text-headline-md text-on-surface">L</span>
+<span class="font-code-inline text-code-inline text-on-surface-variant">7% restore</span>
+</button>
+<button class="p-2.5 rounded-lg bg-surface-container-high ring-2 ring-primary text-center" type="button">
+<span class="block font-headline-md text-headline-md text-primary">M</span>
+<span class="font-code-inline text-code-inline text-on-surface">15% restore</span>
+</button>
+<button class="p-2.5 rounded-lg bg-surface-container-low text-center hover:bg-surface-container-high" type="button">
+<span class="block font-headline-md text-headline-md text-on-surface">Q</span>
+<span class="font-code-inline text-code-inline text-on-surface-variant">25% restore</span>
+</button>
+<button class="p-2.5 rounded-lg bg-surface-container-low text-center hover:bg-surface-container-high" type="button">
+<span class="block font-headline-md text-headline-md text-on-surface">H</span>
+<span class="font-code-inline text-code-inline text-on-surface-variant">30% restore</span>
+</button>
+</div>
+</div>
+<!-- Quiet Margin Slider -->
+<div class="flex flex-col gap-2 pt-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Quiet Zone Padding</span>
+<span class="font-code-inline text-code-inline text-on-surface-variant">2 modules (Standard)</span>
+</div>
+<input class="w-full accent-primary cursor-pointer" max="6" min="0" type="range" value="2">
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: STICKY PREVIEW & RENDER VIEWPORT (5 Columns) -->
+<div class="lg:col-span-5 flex flex-col gap-4 sticky top-24">
+<!-- Live Render Container Card -->
+<div class="bg-surface-container rounded-2xl p-6 shadow-xl flex flex-col items-center">
+<!-- Viewport Header Status Bar -->
+<div class="w-full flex items-center justify-between pb-5">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-headline-md text-headline-md text-on-surface">Live Vector Render</span>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/20 text-secondary font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[15px]">verified</span>
+<span class="">100% Contrast Scannable</span>
+</div>
+</div>
+<!-- Central QR Code Visual Hero Card -->
+<div class="relative w-full max-w-sm aspect-square bg-white rounded-2xl p-6 shadow-2xl flex items-center justify-center overflow-hidden">
+<!-- Simulated High-Precision QR Code SVG Graphic -->
+<svg class="w-full h-full text-[#0b1326]" fill="currentColor" id="live-qr-svg" viewBox="0 0 240 240">
+<!-- Top-Left Finder Eye -->
+<rect fill="currentColor" height="56" rx="10" width="56" x="10" y="10"></rect>
+<rect fill="#ffffff" height="40" rx="6" width="40" x="18" y="18"></rect>
+<rect fill="currentColor" height="24" rx="4" width="24" x="26" y="26"></rect>
+<!-- Top-Right Finder Eye -->
+<rect fill="currentColor" height="56" rx="10" width="56" x="174" y="10"></rect>
+<rect fill="#ffffff" height="40" rx="6" width="40" x="182" y="18"></rect>
+<rect fill="currentColor" height="24" rx="4" width="24" x="190" y="26"></rect>
+<!-- Bottom-Left Finder Eye -->
+<rect fill="currentColor" height="56" rx="10" width="56" x="10" y="174"></rect>
+<rect fill="#ffffff" height="40" rx="6" width="40" x="18" y="182"></rect>
+<rect fill="currentColor" height="24" rx="4" width="24" x="26" y="190"></rect>
+<!-- Timing Patterns -->
+<rect fill="currentColor" height="8" rx="2" width="8" x="74" y="34"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="90" y="34"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="106" y="34"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="122" y="34"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="138" y="34"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="154" y="34"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="34" y="74"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="34" y="90"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="34" y="106"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="34" y="122"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="34" y="138"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="34" y="154"></rect>
+<!-- Matrix Data Modules - Semi-random crisp clusters -->
+<!-- Quadrant 1 Top Center -->
+<rect fill="currentColor" height="8" rx="2" width="8" x="74" y="14"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="82" y="22"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="98" y="14"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="114" y="22"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="130" y="14"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="146" y="22"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="74" y="50"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="90" y="50"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="114" y="50"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="138" y="50"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="154" y="50"></rect>
+<!-- Quadrant 2 Mid Left -->
+<rect fill="currentColor" height="8" rx="2" width="8" x="14" y="74"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="50" y="74"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="14" y="90"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="22" y="98"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="50" y="90"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="14" y="114"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="50" y="114"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="14" y="138"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="50" y="138"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="14" y="154"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="50" y="154"></rect>
+<!-- Quadrant 3 Center Field Data Modules -->
+<rect fill="currentColor" height="8" rx="2" width="8" x="74" y="74"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="82" y="82"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="90" y="74"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="98" y="90"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="138" y="74"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="146" y="82"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="154" y="74"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="74" y="138"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="82" y="146"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="90" y="138"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="138" y="138"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="154" y="138"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="146" y="154"></rect>
+<!-- Quadrant 4 Right Side & Bottom Right -->
+<rect fill="currentColor" height="8" rx="2" width="8" x="174" y="74"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="190" y="74"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="206" y="74"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="222" y="74"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="174" y="90"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="182" y="98"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="214" y="90"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="174" y="114"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="198" y="114"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="222" y="114"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="174" y="138"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="190" y="146"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="206" y="138"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="222" y="146"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="74" y="174"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="90" y="174"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="106" y="182"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="122" y="174"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="138" y="182"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="154" y="174"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="74" y="198"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="98" y="198"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="122" y="206"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="146" y="198"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="174" y="174"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="182" y="182"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="198" y="174"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="214" y="182"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="222" y="174"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="174" y="206"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="190" y="214"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="206" y="206"></rect>
+<rect fill="currentColor" height="8" rx="2" width="8" x="222" y="214"></rect>
+<!-- Center Logo Shield Halo -->
+<rect fill="#ffffff" height="50" rx="12" width="50" x="95" y="95"></rect>
+<!-- Center Logo Graphic: Stylized QRcraft Monogram Badge -->
+<g transform="translate(100, 100)">
+<rect fill="#494bd6" height="32" rx="8" width="32" x="4" y="4"></rect>
+<path d="M12 12h7v7h-7z M21 12h7v7h-7z M12 21h7v7h-7z M24 21h4v4h-4z M21 24h3v4h-3z" fill="#ffffff"></path>
+</g>
+</svg>
+</div>
+<!-- Payload Metadata Bar -->
+<div class="w-full flex items-center justify-between pt-4 pb-2 text-on-surface-variant font-code-inline text-code-inline">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-secondary">memory</span>
+<span id="payload-metric" class="">Payload: 29 bytes</span>
+</span>
+<span class="">Version: 3-M</span>
+<span class="text-secondary font-medium">Permanent Offline</span>
+</div>
+<!-- Resolution Selector Segmented Control -->
+<div class="w-full mt-4 p-1 rounded-xl bg-surface-container-lowest grid grid-cols-4 gap-1">
+<button class="res-btn py-1.5 rounded-lg text-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+              512px
+            </button>
+<button class="res-btn py-1.5 rounded-lg text-center font-label-md text-label-md bg-surface-container-high text-on-surface shadow-sm font-semibold" type="button">
+              1024px
+            </button>
+<button class="res-btn py-1.5 rounded-lg text-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+              2048px
+            </button>
+<button class="res-btn py-1.5 rounded-lg text-center font-label-md text-label-md text-primary hover:text-primary-fixed transition-colors flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">draw</span>
+              SVG
+            </button>
+</div>
+<!-- Download Action Bar -->
+<div class="w-full flex flex-col gap-2.5 mt-5">
+<button class="w-full py-3.5 px-4 rounded-xl bg-primary-container hover:bg-inverse-primary text-on-primary font-headline-md text-headline-md flex items-center justify-center gap-2 shadow-lg transition-transform hover:-translate-y-0.5 active:translate-y-0" id="download-png-btn" type="button">
+<span class="material-symbols-outlined text-[22px]">download</span>
+              Download High-Res PNG (1024px)
+            </button>
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2.5 px-3 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors" id="download-svg-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">polyline</span>
+                Vector SVG (Print)
+              </button>
+<button class="py-2.5 px-3 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors" id="copy-clipboard-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+                Copy to Clipboard
+              </button>
+</div>
+</div>
+<!-- Trust Reassurance Block -->
+<div class="w-full mt-6 pt-4 border-t-0 flex flex-col gap-2 bg-surface-container-low/60 rounded-xl p-3.5">
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-secondary mt-0.5">lock</span>
+<p class="font-body-md text-body-md text-on-surface-variant">
+<span class="text-on-surface font-medium">100% Client-side generation.</span> Compiled inside local WebAssembly runtime. No telemetry or server calls.
+              </p>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-primary mt-0.5">drive_file_rename_outline</span>
+<p class="font-body-md text-body-md text-on-surface-variant">
+<span class="text-on-surface font-medium">Never expires.</span> Pure direct optical data encoding with infinite hardware scan longevity.
+              </p>
+</div>
+</div>
+</div>
+<!-- Scannability Diagnostics Card -->
+<div class="bg-surface-container rounded-xl p-4 shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container/20 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</div>
+<div>
+<div class="font-label-md text-label-md text-on-surface">Optical Readability Metric</div>
+<div class="font-code-inline text-code-inline text-on-surface-variant">Camera distance rating: &gt; 3.2 meters</div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-headline-md text-headline-md text-secondary">99.8%</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">Score</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Inline Micro-Interactions Script -->
+<script>
+    (function () {
+      // 1. Accordion Toggle Behavior
+      const accordions = document.querySelectorAll('.accordion-item');
+      accordions.forEach((item) => {
+        const trigger = item.querySelector('.accordion-trigger');
+        const body = item.querySelector('.accordion-body');
+        const icon = item.querySelector('.accordion-icon');
+        if (trigger && body) {
+          trigger.addEventListener('click', () => {
+            const isHidden = body.classList.contains('hidden');
+            if (isHidden) {
+              body.classList.remove('hidden');
+              icon.classList.add('rotate-180');
+            } else {
+              body.classList.add('hidden');
+              icon.classList.remove('rotate-180');
+            }
+          });
+        }
+      });
+
+      // 2. Data Type Tab Switching
+      const typeTabs = document.querySelectorAll('.type-tab-btn');
+      const panelUrl = document.getElementById('panel-url');
+      const panelWifi = document.getElementById('panel-wifi');
+      const payloadMetric = document.getElementById('payload-metric');
+
+      typeTabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+          typeTabs.forEach((t) => {
+            t.className = 'type-tab-btn flex flex-col items-center justify-center py-2.5 px-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all';
+          });
+          tab.className = 'type-tab-btn flex flex-col items-center justify-center py-2.5 px-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md transition-all shadow-sm';
+
+          const selectedType = tab.getAttribute('data-type');
+          if (selectedType === 'wifi') {
+            panelUrl.classList.add('hidden');
+            panelWifi.classList.remove('hidden');
+            if (payloadMetric) payloadMetric.textContent = 'Payload: 54 bytes (WIFI)';
+          } else {
+            panelUrl.classList.remove('hidden');
+            panelWifi.classList.add('hidden');
+            if (payloadMetric) payloadMetric.textContent = 'Payload: 29 bytes (URL)';
+          }
+        });
+      });
+
+      // 3. Clear URL Input Button
+      const clearBtn = document.getElementById('clear-url-btn');
+      const urlInput = document.getElementById('url-input');
+      if (clearBtn && urlInput) {
+        clearBtn.addEventListener('click', () => {
+          urlInput.value = '';
+          urlInput.focus();
+        });
+      }
+
+      // 4. UTM Campaign Options Expand
+      const utmToggle = document.getElementById('utm-toggle');
+      const utmRow = document.getElementById('utm-inputs-row');
+      if (utmToggle && utmRow) {
+        utmToggle.addEventListener('change', (e) => {
+          if (e.target.checked) {
+            utmRow.classList.remove('hidden');
+          } else {
+            utmRow.classList.add('hidden');
+          }
+        });
+      }
+
+      // 5. Preset Color Clicker
+      const colorBtns = document.querySelectorAll('.color-preset-btn');
+      const fgHexInput = document.getElementById('fg-hex-input');
+      const fgSwatch = document.getElementById('fg-swatch-preview');
+      const liveSvg = document.getElementById('live-qr-svg');
+
+      colorBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const hex = btn.getAttribute('data-color');
+          if (fgHexInput && fgSwatch && liveSvg) {
+            fgHexInput.value = hex.replace('#', '').toUpperCase();
+            fgSwatch.style.backgroundColor = hex;
+            liveSvg.style.color = hex;
+          }
+          colorBtns.forEach((b) => {
+            b.innerHTML = '';
+            b.classList.remove('ring-2', 'ring-primary');
+          });
+          btn.classList.add('ring-2', 'ring-primary');
+          btn.innerHTML = '<span class="material-symbols-outlined text-[14px] text-white">check</span>';
+        });
+      });
+
+      // 6. Copy to Clipboard Simulated Feedback
+      const copyBtn = document.getElementById('copy-clipboard-btn');
+      if (copyBtn) {
+        copyBtn.addEventListener('click', () => {
+          const originalHTML = copyBtn.innerHTML;
+          copyBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] text-secondary">done</span> Copied Image!';
+          setTimeout(() => {
+            copyBtn.innerHTML = originalHTML;
+          }, 2000);
+        });
+      }
+
+      // 7. Download PNG Simulated Feedback
+      const dlBtn = document.getElementById('download-png-btn');
+      if (dlBtn) {
+        dlBtn.addEventListener('click', () => {
+          const originalText = dlBtn.innerHTML;
+          dlBtn.innerHTML = '<span class="material-symbols-outlined text-[22px] animate-spin">refresh</span> Compiling 1024px PNG...';
+          setTimeout(() => {
+            dlBtn.innerHTML = '<span class="material-symbols-outlined text-[22px]">check_circle</span> Download Complete!';
+            setTimeout(() => {
+              dlBtn.innerHTML = originalText;
+            }, 1800);
+          }, 800);
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest"><div class="w-full bg-surface-container-low py-space-xl"><div class="max-w-7xl mx-auto px-6 lg:px-12"><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg"><div class="p-space-lg rounded-xl bg-surface-container"><div class="w-10 h-10 rounded-lg bg-secondary-container/20 text-secondary flex items-center justify-center mb-space-sm"><span class="material-symbols-outlined text-[24px]">lock</span></div><h4 class="font-headline-md text-headline-md text-on-surface mb-1">100% Static &amp; Client-Side</h4><p class="font-body-md text-body-md text-on-surface-variant">Data stays solely in your browser memory. No backend transmissions or logged telemetry.</p></div><div class="p-space-lg rounded-xl bg-surface-container"><div class="w-10 h-10 rounded-lg bg-secondary-container/20 text-secondary flex items-center justify-center mb-space-sm"><span class="material-symbols-outlined text-[24px]">all_inclusive</span></div><h4 class="font-headline-md text-headline-md text-on-surface mb-1">Never Expires</h4><p class="font-body-md text-body-md text-on-surface-variant">Zero external redirects or dependency chains. Encoded payloads work permanently offline.</p></div><div class="p-space-lg rounded-xl bg-surface-container"><div class="w-10 h-10 rounded-lg bg-secondary-container/20 text-secondary flex items-center justify-center mb-space-sm"><span class="material-symbols-outlined text-[24px]">visibility_off</span></div><h4 class="font-headline-md text-headline-md text-on-surface mb-1">No Cloud Database</h4><p class="font-body-md text-body-md text-on-surface-variant">Pure cryptographic standards and raster/vector compilation with no intermediate tracking proxy.</p></div><div class="p-space-lg rounded-xl bg-surface-container"><div class="w-10 h-10 rounded-lg bg-secondary-container/20 text-secondary flex items-center justify-center mb-space-sm"><span class="material-symbols-outlined text-[24px]">qr_code_scanner</span></div><h4 class="font-headline-md text-headline-md text-on-surface mb-1">Unlimited Scans Forever</h4><p class="font-body-md text-body-md text-on-surface-variant">Direct camera decoding ensures infinite read cycles without subscription limits or throttling.</p></div></div></div></div><div class="max-w-7xl mx-auto px-6 lg:px-12 py-space-xl flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img alt="QiCraft Logo" class="h-6 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XeNFitI05oe7M0o1Xf9CLNnTedxGH5_8ASA8FA1otk9dTlsOKvmsNDpPCnzuYqz7gIYprIc1xzjaTct2htNoBEbG-iMlrMCOWHxeOu20fgUiPdh52Lbx4BxRej8tS2hBBC16RRISk3PHs8rtLwx_SSY1C-LneEbJ__rGhaOq5iH3NNPxt-Tat9Xxv1kyg1S-XlH2QO2pCPBnSqIWGjkC6_gQ7b5LbY3p_-zE6SwiybeCfDXjBUIC1ZjY2G"><span class="font-headline-md text-headline-md text-on-surface">QiCraft</span><span class="font-body-md text-body-md text-on-surface-variant ml-2">© 2024 QiCraft Open Source. Built for uncompromising privacy.</span></div><div class="flex items-center gap-space-lg"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="privacy-architecture" href="#">Privacy Architecture</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="terms" href="#">Terms</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="templates" href="#">Vector Presets</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-static-qr" href="#">Static vs Dynamic</a></div></div></footer>
+
+</body></html>
